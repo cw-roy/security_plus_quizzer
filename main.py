@@ -1,4 +1,17 @@
 #!/usr/bin/env python3
+"""
+Security+ Quiz Application
+
+A command-line quiz application for practicing CompTIA Security+ exam questions.
+The application loads questions from a text file, presents them in random order,
+and tracks user scores over time.
+
+Usage:
+    python main.py [-f FILE] [-n NUM] [-s SCORES]
+
+Example:
+    python main.py --file my_questions.txt --num 20 --scores history.json
+"""
 
 import argparse
 import json
@@ -7,8 +20,30 @@ import random
 from datetime import datetime
 
 
-def load_data(filename):
-    """Parse text file into list of dicts: {'question': str, 'options': list, 'answer': str}"""
+def load_data(filename: str) -> list[dict]:
+    """
+    Parse a formatted text file into a list of question dictionaries.
+
+    Args:
+        filename (str): Path to the text file containing quiz questions.
+            File must follow the format:
+            Question N: text
+            A) option1
+            B) option2
+            C) option3
+            D) option4
+            Answer: correct_letter
+
+    Returns:
+        list[dict]: List of question dictionaries, each containing:
+            - 'question': str - The question text
+            - 'options': list[str] - List of 4 answer options
+            - 'answer': str - Correct answer letter (A/B/C/D)
+
+    Raises:
+        FileNotFoundError: If the specified file doesn't exist
+        ValueError: If the file format is invalid
+    """
     questions = []
     with open(filename, "r") as f:
         lines = [line.strip() for line in f.readlines() if line.strip()]
@@ -41,8 +76,26 @@ def load_data(filename):
     return questions
 
 
-def run_quiz(questions, num_questions):
-    """Run randomized quiz and return score."""
+def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int]:
+    """
+    Present a randomized quiz to the user and track their score.
+
+    Args:
+        questions (list[dict]): List of question dictionaries, each containing
+            'question', 'options', and 'answer' keys
+        num_questions (int): Number of questions to present from the pool.
+            Will be capped at the total number of available questions.
+
+    Returns:
+        tuple[int, int]: A tuple containing:
+            - Number of correct answers (score)
+            - Total number of questions asked
+
+    Note:
+        Prints each question with multiple choice options and provides
+        immediate feedback on correctness. Displays final score as both
+        raw numbers and percentage.
+    """
     if num_questions > len(questions):
         num_questions = len(questions)
     selected = random.sample(questions, num_questions)
@@ -62,8 +115,19 @@ def run_quiz(questions, num_questions):
     return score, num_questions
 
 
-def save_score(scores_file, score, total):
-    """Append score to JSON file."""
+def save_score(scores_file: str, score: int, total: int) -> None:
+    """
+    Save quiz results to a JSON file for tracking progress over time.
+
+    Args:
+        scores_file (str): Path to the JSON file for storing scores
+        score (int): Number of correct answers from the quiz
+        total (int): Total number of questions asked
+
+    Note:
+        Creates a new file if it doesn't exist, or appends to existing file.
+        Each entry includes timestamp, score, and total questions.
+    """
     entry = {"date": datetime.now().isoformat(), "score": score, "total": total}
     if os.path.exists(scores_file):
         with open(scores_file, "r") as f:
@@ -75,7 +139,18 @@ def save_score(scores_file, score, total):
         json.dump(scores, f, indent=4)
 
 
-def main():
+def main() -> None:
+    """Main entry point for the Security+ Quiz application.
+
+    Handles command-line argument parsing, question loading, quiz execution,
+    and score saving. Supports interactive mode for selecting number of
+    questions when not specified via command line.
+
+    Command-line Arguments:
+        -f, --file: Path to questions file (default: questions.txt)
+        -n, --num: Number of questions to ask (optional)
+        -s, --scores: Path to scores file (default: scores.json)
+    """
     parser = argparse.ArgumentParser(description="CompTIA Security+ Quiz")
     parser.add_argument("-f", "--file", default="questions.txt", help="Questions file")
     parser.add_argument("-n", "--num", type=int, help="Number of questions")
