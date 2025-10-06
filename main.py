@@ -44,35 +44,16 @@ def load_data(filename: str) -> list[dict]:
         FileNotFoundError: If the specified file doesn't exist
         ValueError: If the file format is invalid
     """
-    questions = []
-    with open(filename, "r") as f:
-        lines = [line.strip() for line in f.readlines() if line.strip()]
-
-    i = 0
-    while i < len(lines):
-        if lines[i].startswith("Question "):  # Assume format: Question N: text
-            question = (
-                lines[i].split(":", 1)[1].strip()
-                if ":" in lines[i]
-                else lines[i].strip()
+    with open(filename, "r", encoding="utf-8") as f:
+        questions = json.load(f)
+    # Basic validation
+    if not isinstance(questions, list):
+        raise ValueError("JSON file must contain a list of questions.")
+    for q in questions:
+        if not all(k in q for k in ("question", "options", "answer")):
+            raise ValueError(
+                "Each question must have 'question', 'options', and 'answer' keys."
             )
-            i += 1
-            options = []
-            while i < len(lines) and any(
-                lines[i].startswith(prefix) for prefix in ("A)", "B)", "C)", "D)")
-            ):
-                options.append(lines[i])
-                i += 1
-            if i < len(lines) and lines[i].startswith("Answer:"):
-                answer = lines[i].replace("Answer:", "").strip()
-                questions.append(
-                    {"question": question, "options": options, "answer": answer}
-                )
-                i += 1
-            else:
-                i += 1  # Skip malformed
-        else:
-            i += 1
     return questions
 
 
@@ -102,8 +83,12 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int]:
     score = 0
     for q in selected:
         print(f"\n{q['question']}")
-        for opt in q["options"]:
-            print(opt)
+        option_letters = ["A", "B", "C", "D"]
+        for idx, opt in enumerate(q["options"]):
+            if idx < len(option_letters):
+                print(f"{option_letters[idx]}. {opt}")
+            else:
+                print(f"{opt}")
         user_ans = input("Your answer (A/B/C/D): ").upper().strip()
         if user_ans == q["answer"].upper():
             print("Correct!")
@@ -152,7 +137,9 @@ def main() -> None:
         -s, --scores: Path to scores file (default: scores.json)
     """
     parser = argparse.ArgumentParser(description="CompTIA Security+ Quiz")
-    parser.add_argument("-f", "--file", default="questions.txt", help="Questions file")
+    parser.add_argument(
+        "-f", "--file", default="questions.json", help="Questions JSON file"
+    )
     parser.add_argument("-n", "--num", type=int, help="Number of questions")
     parser.add_argument("-s", "--scores", default="scores.json", help="Scores file")
     args = parser.parse_args()
