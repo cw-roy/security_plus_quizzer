@@ -3,14 +3,14 @@
 Security+ Quiz Application
 
 A command-line quiz application for practicing CompTIA Security+ exam questions.
-The application loads questions from a text file, presents them in random order,
+The application loads questions from a JSON file, presents them in random order,
 and tracks user scores over time.
 
 Usage:
     python main.py [-f FILE] [-n NUM] [-s SCORES]
 
 Example:
-    python main.py --file my_questions.txt --num 20 --scores history.json
+    python main.py --file my_questions.json --num 20 --scores history.json
 """
 
 import argparse
@@ -22,23 +22,17 @@ from datetime import datetime
 
 def load_data(filename: str) -> list[dict]:
     """
-    Parse a formatted text file into a list of question dictionaries.
+    Load questions from a JSON file into a list of question dictionaries.
 
     Args:
-        filename (str): Path to the text file containing quiz questions.
-            File must follow the format:
-            Question N: text
-            A) option1
-            B) option2
-            C) option3
-            D) option4
-            Answer: correct_letter
+        filename (str): Path to the JSON file containing quiz questions.
+            File must be a list of dicts with keys:
+            - 'question': str
+            - 'options': list[str]
+            - 'answer': str
 
     Returns:
-        list[dict]: List of question dictionaries, each containing:
-            - 'question': str - The question text
-            - 'options': list[str] - List of 4 answer options
-            - 'answer': str - Correct answer letter (A/B/C/D)
+        list[dict]: List of question dictionaries.
 
     Raises:
         FileNotFoundError: If the specified file doesn't exist
@@ -132,7 +126,7 @@ def main() -> None:
     questions when not specified via command line.
 
     Command-line Arguments:
-        -f, --file: Path to questions file (default: questions.txt)
+        -f, --file: Path to questions JSON file (default: questions.json)
         -n, --num: Number of questions to ask (optional)
         -s, --scores: Path to scores file (default: scores.json)
     """

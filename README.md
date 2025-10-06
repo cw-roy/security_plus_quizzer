@@ -4,8 +4,8 @@ An interactive command-line quiz application designed to help users practice for
 
 ## Features
 
-- Load custom question sets from text files
-- Randomized question selection
+- Load custom question sets from JSON files
+- Randomized question and answer order
 - Score tracking and history
 - Customizable number of questions per quiz session (up to 90)
 - Progress saving in JSON format
@@ -67,7 +67,7 @@ python main.py
 
 This will:
 
-- Load questions from `questions.txt`
+- Load questions from `questions.json`
 - Prompt for the number of questions you want to answer
 - Save scores to `scores.json`
 
@@ -80,30 +80,39 @@ python main.py [-h] [-f FILE] [-n NUM] [-s SCORES]
 Options:
 
 - `-h, --help`: Show help message
-- `-f FILE, --file FILE`: Specify custom questions file (default: "questions.txt")
+- `-f FILE, --file FILE`: Specify custom questions JSON file (default: "questions.json")
 - `-n NUM, --num NUM`: Set number of questions for the quiz
 - `-s SCORES, --scores SCORES`: Specify custom score file location (default: "scores.json")
 
-### Question File Format
+### Question File Format (JSON)
 
-Questions must be formatted in the following way:
+Questions must be formatted in the following way (JSON):
 
-```text
-Question 1: What is a firewall?
-A) A security device that monitors network traffic
-B) A type of computer virus
-C) A backup system
-D) A password manager
-Answer: A
-
-Question 2: ...
+```json
+[
+  {
+    "question": "What is a firewall?",
+    "options": [
+      "A security device that monitors network traffic",
+      "A type of computer virus",
+      "A backup system",
+      "A password manager"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "...",
+    "options": ["...", "...", "...", "..."],
+    "answer": "B"
+  }
+]
 ```
 
 Each question must have:
 
-1. Question line starting with "Question"
-2. Four options labeled A) through D)
-3. Answer line starting with "Answer:" followed by the correct option letter
+1. A "question" field (string)
+2. An "options" field (list of 4 strings)
+3. An "answer" field (correct option letter: "A", "B", "C", or "D")
 
 ## Score Tracking
 
