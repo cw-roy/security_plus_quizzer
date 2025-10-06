@@ -78,17 +78,29 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int]:
     for q in selected:
         print(f"\n{q['question']}")
         option_letters = ["A", "B", "C", "D"]
-        for idx, opt in enumerate(q["options"]):
-            if idx < len(option_letters):
-                print(f"{option_letters[idx]}. {opt}")
-            else:
-                print(f"{opt}")
+        options = q["options"][:]
+        correct_index = (
+            option_letters.index(q["answer"]) if q["answer"] in option_letters else 3
+        )
+        # Track the correct answer text before shuffling
+        correct_text = options[correct_index]
+        # Shuffle options
+        shuffled = list(enumerate(options))
+        random.shuffle(shuffled)
+        # Find new index of correct answer
+        new_correct_index = None
+        for idx, (orig_idx, opt) in enumerate(shuffled):
+            if opt == correct_text:
+                new_correct_index = idx
+        # Display shuffled options
+        for idx, (orig_idx, opt) in enumerate(shuffled):
+            print(f"{option_letters[idx]}. {opt}")
         user_ans = input("Your answer (A/B/C/D): ").upper().strip()
-        if user_ans == q["answer"].upper():
+        if user_ans == option_letters[new_correct_index]:
             print("Correct!")
             score += 1
         else:
-            print(f"Incorrect. Correct answer: {q['answer']}")
+            print(f"Incorrect. Correct answer: {option_letters[new_correct_index]}")
     percentage = (score / num_questions) * 100 if num_questions > 0 else 0
     print(f"\nScore: {score}/{num_questions} ({percentage:.1f}%)")
     return score, num_questions
