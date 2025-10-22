@@ -1,154 +1,108 @@
-# Security+ Quiz Application
+# Quiz Application
 
-An interactive command-line quiz application designed to help users practice for the CompTIA Security+ certification exam.
+A command-line quiz application I developed for practicing CompTIA Security+ exam questions. 
+This could be used for other multiple-choice quizzes as well. See below for details, 
+specifically the expected format of the questions JSON file. It loads questions from a JSON 
+file, presents them in random order, and tracks user scores over time.
 
 ## Features
+- Loads questions from a JSON file (`questions_main.json`).
+  - NOTE: The example question bank here is not guaranteed to be accurate, although I've made my best effort. Use at your own risk.
+- Randomizes question order and answer options for varied practice.
+- Displays the correct answer (`AnswerText`) for both correct and incorrect responses to reinforce learning.
+- Saves quiz results to a JSON file, including:
+  - Timestamp
+  - Score and total questions
+- Supports command-line arguments for customizing the quiz file, number of questions, and scores file.
+- Interactive mode for selecting the number of questions if not specified.
+- Error handling for file loading, JSON validation, and user input.
 
-- Load custom question sets from JSON files
-- Randomized question and answer order
-- Score tracking and history
-- Customizable number of questions per quiz session (up to 90)
-- Progress saving in JSON format
-
-## Disclaimer
-
-**Important Note**: While this application is designed to help you practice for the CompTIA Security+ exam, the questions provided are not officially endorsed by CompTIA. The accuracy of the questions and answers cannot be guaranteed. Users should:
-
-- Verify information from official CompTIA study materials
-- Use this tool as supplementary practice only
-- Consult current exam objectives and official study guides
-- Do their own research to validate technical concepts
-
-CompTIA Security+ certification requirements and exam content may change. Always refer to [CompTIA's official website](https://www.comptia.org) for the most up-to-date information.
+## Requirements
+- Python 3.6+ (built and tested on 3.10)
+- No external dependencies
 
 ## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cw-roy/security_plus_quizzer.git
+   cd security_plus_quizzer
+   ```
+2. Ensure `questions_main.json` is in the project directory or provide a path to your own question file.
 
-1. Ensure you have Python 3.6 or higher installed
-2. Clone this repository:
-
-```bash
-git clone [repository-url]
-cd security_plus_quizzer
-```
-
-### Platform-Specific Instructions
-
-#### Linux/Unix/MacOS
-
-1. Make the script executable:
-
-```bash
-chmod +x main.py
-```
-
-2. Run directly using:
-
-```bash
-./main.py
-```
-
-Or use Python explicitly:
-
+## Usage
+Run the script with default settings:
 ```bash
 python3 main.py
 ```
 
-Note: On some systems, you may need to use `python3` instead of `python` to ensure you're using Python 3.x.
+### Command-Line Arguments
+- `-f, --file`: Path to the questions JSON file (default: `questions.json`).
+- `-n, --num`: Number of questions to ask (optional; prompts interactively if omitted).
+- `-s, --scores`: Path to the scores JSON file (default: `scores.json`).
 
-## Usage
-
-### Basic Usage
-
-Run the quiz with default settings:
-
+Example:
 ```bash
-python main.py
+python3 main.py --file questions_master.json --num 20 --scores history.json
 ```
 
-This will:
-
-- Load questions from `questions.json`
-- Prompt for the number of questions you want to answer
-- Save scores to `scores.json`
-
-### Command Line Options
-
-```bash
-python main.py [-h] [-f FILE] [-n NUM] [-s SCORES]
+### Input JSON Format
+The script expects a JSON file with the following structure:
+```json
+{
+  "questions": [
+    {
+      "Question": "Question text",
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D",
+      "Answer": "A",
+      "AnswerText": "Option A"
+    },
+    ...
+  ]
+}
 ```
 
-Options:
+### Output
+- Questions are displayed with shuffled options (A, B, C, D).
+- Immediate feedback is provided ("Correct!" or "Incorrect. Correct answer: X").
+- Final score is displayed as `score/total (percentage%)`.
+- Scores are saved to the specified scores file with metadata.
 
-- `-h, --help`: Show help message
-- `-f FILE, --file FILE`: Specify custom questions JSON file (default: "questions.json")
-- `-n NUM, --num NUM`: Set number of questions for the quiz
-- `-s SCORES, --scores SCORES`: Specify custom score file location (default: "scores.json")
-
-### Question File Format (JSON)
-
-Questions must be formatted in the following way (JSON):
-
+### Scores File Format
+The scores file (`scores.json`) stores quiz results as a list of entries:
 ```json
 [
   {
-    "question": "What is a firewall?",
-    "options": [
-      "A security device that monitors network traffic",
-      "A type of computer virus",
-      "A backup system",
-      "A password manager"
-    ],
-    "answer": "A"
+    "date": "2025-10-22T12:30:00.123456",
+    "score": 18,
+    "total": 20,
   },
-  {
-    "question": "...",
-    "options": ["...", "...", "...", "..."],
-    "answer": "B"
-  }
+  ...
 ]
 ```
+- I will probably add functionality for reviewing incorrect answers at some point. 
 
-Each question must have:
+## Example Interaction
+```
+How many questions? (1-90): 3
 
-1. A "question" field (string)
-2. An "options" field (list of 4 strings)
-3. An "answer" field (correct option letter: "A", "B", "C", or "D")
+An organization is designing its network infrastructure using Zero Trust principles. Which core tenet requires all assets and workflows to be continuously verified before being granted or keeping access to data or applications?
+A. Access Limitation
+B. Limit the "Blast Radius"
+C. Assume all network connections are insecure
+D. Continuous Verification
+Your answer (A/B/C/D): D
+Correct!
+Explanation: Continuous Verification
 
-## Score Tracking
+[... more questions ...]
 
-Scores are saved in JSON format with:
-
-- Date and time of the quiz
-- Number of correct answers
-- Total number of questions
-
-Example scores.json:
-
-```json
-[
-  {
-    "date": "2025-10-04T14:30:00.000000",
-    "score": 8,
-    "total": 10
-  }
-]
+Score: 2/3 (66.7%)
+Score saved to scores.json
 ```
 
-## Requirements
-
-- Python 3.6+ (Tested in 3.10)
-- Standard library modules only:
-  - argparse
-  - json
-  - random
-  - datetime
-  - os
-
-## Error Handling
-
-The application includes error handling for:
-
-- Invalid input files
-- Malformed questions
-- Invalid user input
-- Missing score files
+## Development
+- **Testing**: Test with `questions_main.json` to ensure compatibility. Verify score saving with multiple runs and check handling of corrupted scores files.
+- **Extending**: Add features like question category filtering or retrying incorrect questions by modifying the `run_quiz` function.

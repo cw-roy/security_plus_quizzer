@@ -1,0 +1,1750 @@
+{
+  "questions": [
+    {
+      "Question": "An organization is designing its network infrastructure using Zero Trust principles. Which core tenet requires all assets and workflows to be continuously verified before being granted or keeping access to data or applications?",
+      "A": "Assume all network connections are insecure",
+      "B": "Limit the \"Blast Radius\"",
+      "C": "Access Limitation",
+      "D": "Continuous Verification",
+      "Answer": "D",
+      "AnswerText": "Continuous Verification"
+    },
+    {
+      "Question": "Which phase of the Incident Response (IR) life cycle involves evaluating the overall response effectiveness, identifying opportunities for improvement, and applying the incident’s learnings to future preparedness?",
+      "A": "Containment",
+      "B": "Recovery",
+      "C": "Eradication",
+      "D": "Lessons Learned",
+      "Answer": "D",
+      "AnswerText": "Lessons Learned"
+    },
+    {
+      "Question": "Which cryptographic algorithm uses both a public key and a private key to encrypt and decrypt data, making it generally more secure but slower due to its complexity?",
+      "A": "Symmetric encryption",
+      "B": "Asymmetric encryption",
+      "C": "Twofish",
+      "D": "Triple DES (3DES)",
+      "Answer": "B",
+      "AnswerText": "Asymmetric encryption"
+    },
+    {
+      "Question": "An attacker uses a password-cracking program that systematically attempts every possible combination of characters until the correct password is found. What type of attack is this?",
+      "A": "Dictionary attack",
+      "B": "Rainbow table attack",
+      "C": "Brute force attack",
+      "D": "Collision attack",
+      "Answer": "C",
+      "AnswerText": "Brute force attack"
+    },
+    {
+      "Question": "When performing quantitative risk analysis, the likely percentage of asset value that will be lost if a specific threat materializes is defined as the:",
+      "A": "Annualized Rate of Occurrence (ARO)",
+      "B": "Single Loss Expectancy (SLE)",
+      "C": "Annualized Loss Expectancy (ALE)",
+      "D": "Exposure Factor (EF)",
+      "Answer": "D",
+      "AnswerText": "Exposure Factor (EF)"
+    },
+    {
+      "Question": "An organization is deploying an enterprise-level wireless network. Which authentication standard uses Simultaneous Authentication of Equals (SAE) to replace the older, vulnerable four-way handshake?",
+      "A": "EAP-TLS",
+      "B": "WPA2",
+      "C": "WPA-Enterprise",
+      "D": "WPA3",
+      "Answer": "D",
+      "AnswerText": "WPA3"
+    },
+    {
+      "Question": "A security team is performing an exercise where they simulate an attack in real-time, requiring participants to take actions on simulated systems and data to test response plans under pressure. What type of exercise is this?",
+      "A": "Tabletop exercise",
+      "B": "Walkthrough",
+      "C": "Root cause analysis",
+      "D": "Simulation",
+      "Answer": "D",
+      "AnswerText": "Simulation"
+    },
+    {
+      "Question": "Which tool is specifically classified as an exploitation framework that penetration testers can use to simplify configuring and deploying vulnerability exploits?",
+      "A": "Nessus",
+      "B": "Nmap",
+      "C": "Wireshark",
+      "D": "Metasploit",
+      "Answer": "D",
+      "AnswerText": "Metasploit"
+    },
+    {
+      "Question": "In the context of the CIA triad, which cryptographic concept ensures that data remains unaltered by unauthorized parties during transmission or storage?",
+      "A": "Confidentiality",
+      "B": "Non-repudiation",
+      "C": "Availability",
+      "D": "Integrity",
+      "Answer": "D",
+      "AnswerText": "Integrity"
+    },
+    {
+      "Question": "Which network security technology authenticates users and devices and enforces compliance with established security policies (e.g., checking AV status and patch level) before granting network access?",
+      "A": "Virtual Desktop Infrastructure (VDI)",
+      "B": "Data Loss Prevention (DLP)",
+      "C": "Software-Defined Wide Area Network (SD-WAN)",
+      "D": "Network Access Control (NAC)",
+      "Answer": "D",
+      "AnswerText": "Network Access Control (NAC)"
+    },
+    {
+      "Question": "Which encryption level is applied when securing individual data fields or rows within a managed database to provide granular control over sensitive data?",
+      "A": "Full-disk encryption",
+      "B": "Volume encryption",
+      "C": "Database-level encryption",
+      "D": "Record-level encryption",
+      "Answer": "D",
+      "AnswerText": "Record-level encryption"
+    },
+    {
+      "Question": "Which approach to penetration testing involves the offensive (Red) team and the defensive (Blue) team collaborating to facilitate communication and knowledge-sharing to enhance defenses?",
+      "A": "Offensive testing",
+      "B": "Defensive testing",
+      "C": "Black box testing",
+      "D": "Integrated testing / Purple team",
+      "Answer": "D",
+      "AnswerText": "Integrated testing / Purple team"
+    },
+    {
+      "Question": "What is the process of identifying how an organization's security systems deviate from those required or recommended by a standard security framework, often performed when adopting a new compliance requirement?",
+      "A": "Risk assessment",
+      "B": "Compliance reporting",
+      "C": "Gap analysis",
+      "D": "Impact analysis",
+      "Answer": "C",
+      "AnswerText": "Gap analysis"
+    },
+    {
+      "Question": "An incident responder needs to preserve information related to a compromised system for potential litigation. Which formal legal mandate requires the organization to retain all potentially relevant information?",
+      "A": "Chain of custody",
+      "B": "E-discovery",
+      "C": "Acquisition",
+      "D": "Legal hold",
+      "Answer": "D",
+      "AnswerText": "Legal hold"
+    },
+    {
+      "Question": "An organization is setting up multiple data centers using a multicloud approach to ensure high availability and continuity of operations. Which characteristic primarily defines this strategy?",
+      "A": "Least privilege",
+      "B": "Serverless implementation",
+      "C": "Centralized architecture",
+      "D": "Resilience",
+      "Answer": "D",
+      "AnswerText": "Resilience"
+    },
+    {
+      "Question": "A cybersecurity professional is using Google Dorking and public Whois lookups to gather information about a target organization without interacting with its systems. What type of reconnaissance is being performed?",
+      "A": "Active reconnaissance",
+      "B": "Social engineering",
+      "C": "Passive reconnaissance",
+      "D": "Footprinting",
+      "Answer": "C",
+      "AnswerText": "Passive reconnaissance"
+    },
+    {
+      "Question": "Which element of an effective security governance framework outlines the steps to recover the original system configuration if a proposed change introduces an unforeseen problem?",
+      "A": "Standard Operating Procedure (SOP)",
+      "B": "Approval Process",
+      "C": "Maintenance Window",
+      "D": "Backout Plan",
+      "Answer": "D",
+      "AnswerText": "Backout Plan"
+    },
+    {
+      "Question": "What type of security control is exemplified by the deployment of security guards, fencing, or bollards around a data center perimeter?",
+      "A": "Managerial",
+      "B": "Technical",
+      "C": "Operational",
+      "D": "Physical",
+      "Answer": "D",
+      "AnswerText": "Physical"
+    },
+    {
+      "Question": "Which standard Linux kernel module provides Mandatory Access Control (MAC) capabilities to enforce security policies and implement least privilege principles?",
+      "A": "Trusted Platform Module (TPM)",
+      "B": "Group Policy Object (GPO)",
+      "C": "Advanced Encryption Standard (AES)",
+      "D": "Security-Enhanced Linux (SELinux)",
+      "Answer": "D",
+      "AnswerText": "Security-Enhanced Linux (SELinux)"
+    },
+    {
+      "Question": "Which IR data source provides detailed information on communication sessions, including the source and destination IPs, ports, and protocol used, but typically omits the actual payload or packet content?",
+      "A": "Packet capture (PCAP)",
+      "B": "Endpoint logs",
+      "C": "Firewall logs",
+      "D": "Flow logs / NetFlow",
+      "Answer": "D",
+      "AnswerText": "Flow logs / NetFlow"
+    },
+    {
+      "Question": "An unauthorized access point is installed on the corporate network, often by an attacker masquerading as a legitimate access point with a similar SSID. This malicious device is commonly referred to as:",
+      "A": "Access Point (AP)",
+      "B": "Network Access Control (NAC) client",
+      "C": "Evil Twin",
+      "D": "Wireless controller",
+      "Answer": "C",
+      "AnswerText": "Evil Twin"
+    },
+    {
+      "Question": "The organization is required to manage and protect the personal data of European Union residents. Which regulation must the organization operate with an awareness of?",
+      "A": "HIPAA",
+      "B": "PCI DSS",
+      "C": "SOX",
+      "D": "GDPR",
+      "Answer": "D",
+      "AnswerText": "GDPR"
+    },
+    {
+      "Question": "What type of failure mode prioritizes security over availability by blocking all access to a system or resource when an issue is detected, often referred to as 'pulling up the drawbridge'?",
+      "A": "Fail-open",
+      "B": "Defense-in-depth",
+      "C": "Active control",
+      "D": "Fail-closed",
+      "Answer": "D",
+      "AnswerText": "Fail-closed"
+    },
+    {
+      "Question": "Which type of encryption algorithm, also known as private key encryption, is highly efficient for large data transfers because both the sender and receiver use a single key?",
+      "A": "Asymmetric encryption",
+      "B": "RSA",
+      "C": "Diffie-Hellman",
+      "D": "Symmetric encryption",
+      "Answer": "D",
+      "AnswerText": "Symmetric encryption"
+    },
+    {
+      "Question": "A penetration tester is evaluating a web application and successfully executes an attack by leveraging the SQL WAITFOR command to inject a malicious query. This indicates what vulnerability type?",
+      "A": "Cross-site scripting (XSS)",
+      "B": "Content-based SQL injection",
+      "C": "HTML injection",
+      "D": "Timing-based SQL injection",
+      "Answer": "D",
+      "AnswerText": "Timing-based SQL injection"
+    },
+    {
+      "Question": "Which function is performed by a Cloud Access Security Broker (CASB)?",
+      "A": "Hosting virtual machines and storage.",
+      "B": "Guaranteeing service uptime defined in an SLA.",
+      "C": "Implementing secure wide-area networking protocols.",
+      "D": "Enforcing security policies when accessing cloud services.",
+      "Answer": "D",
+      "AnswerText": "Enforcing security policies when accessing cloud services."
+    },
+    {
+      "Question": "The Payment Card Industry Data Security Standard (PCI DSS) mandates that penetration testing must be performed at which interval?",
+      "A": "Quarterly only.",
+      "B": "After system changes and on a regular schedule.",
+      "C": "Annually only.",
+      "D": "Continuously, using automated scanning.",
+      "Answer": "B",
+      "AnswerText": "After system changes and on a regular schedule."
+    },
+    {
+      "Question": "In cryptography, the practice of creating new cryptographic keys for every session to prevent past communication sessions from being decrypted, even if the long-term private key is later compromised, is known as:",
+      "A": "Key escrow",
+      "B": "Diffie-Hellman key exchange",
+      "C": "Key stretching",
+      "D": "Perfect Forward Secrecy (PFS)",
+      "Answer": "D",
+      "AnswerText": "Perfect Forward Secrecy (PFS)"
+    },
+    {
+      "Question": "An organization is hardening its systems by performing disk encryption. Which tool is a specialized module designed to hold and protect cryptographic keys and is deployed on a separate circuit board from the motherboard?",
+      "A": "Trusted Platform Module (TPM)",
+      "B": "Key Management System (KMS)",
+      "C": "Secure Enclave",
+      "D": "Hardware Security Module (HSM)",
+      "Answer": "D",
+      "AnswerText": "Hardware Security Module (HSM)"
+    },
+    {
+      "Question": "Which type of malware explicitly pretends to be a harmless application while secretly containing malicious functionality?",
+      "A": "Rootkit",
+      "B": "Worm",
+      "C": "Virus",
+      "D": "Trojan",
+      "Answer": "D",
+      "AnswerText": "Trojan"
+    },
+    {
+      "Question": "A cybersecurity professional is using Google Dorking and public Whois lookups to gather information about a target organization before attempting an active engagement. What type of reconnaissance is being performed?",
+      "A": "Active reconnaissance",
+      "B": "Social engineering",
+      "C": "Passive reconnaissance",
+      "D": "Footprinting",
+      "Answer": "C",
+      "AnswerText": "Passive reconnaissance"
+    },
+    {
+      "Question": "In the context of incident response, the primary goal of the Containment phase is to:",
+      "A": "Apply learnings to future preparedness.",
+      "B": "Identify the root cause of the incident.",
+      "C": "Restore computing services to a normal operational state.",
+      "D": "Minimize financial loss, information theft, or service disruption.",
+      "Answer": "D",
+      "AnswerText": "Minimize financial loss, information theft, or service disruption."
+    },
+    {
+      "Question": "Which risk assessment component typically uses numerical values to calculate the financial impact of risks, often relying on metrics like SLE, ARO, and ALE?",
+      "A": "Qualitative analysis",
+      "B": "Ad hoc analysis",
+      "C": "Quantitative analysis",
+      "D": "Continuous assessment",
+      "Answer": "C",
+      "AnswerText": "Quantitative analysis"
+    },
+    {
+      "Question": "A control implemented to prevent unauthorized access to a datacenter by installing biometric locks. What functional type of control is the biometric lock categorized as?",
+      "A": "Detective",
+      "B": "Corrective",
+      "C": "Compensating",
+      "D": "Preventive",
+      "Answer": "D",
+      "AnswerText": "Preventive"
+    },
+    {
+      "Question": "Which symmetric cipher mode is widely used and provides both data authenticity/integrity checks in addition to encryption by incorporating hashes into its operation?",
+      "A": "Electronic Code Book (ECB)",
+      "B": "Cipher Block Chaining (CBC)",
+      "C": "Counter Mode (CTR)",
+      "D": "Galois Counter Mode (GCM)",
+      "Answer": "D",
+      "AnswerText": "Galois Counter Mode (GCM)"
+    },
+    {
+      "Question": "During a penetration test, the tester is granted some information about the environment, such as a list of IP addresses, but lacks full access or detailed configuration knowledge. This is known as a(n):",
+      "A": "Known environment test",
+      "B": "Unknown environment test",
+      "C": "Black box test",
+      "D": "Partially known environment test / Gray box test",
+      "Answer": "D",
+      "AnswerText": "Partially known environment test / Gray box test"
+    },
+    {
+      "Question": "Which secure access technology utilizes protocols like Transport Layer Security (TLS) and Internet Protocol Security (IPSec) to secure data communication over untrusted networks?",
+      "A": "Domain Name Service Security Extensions (DNSSEC)",
+      "B": "Network Access Control (NAC)",
+      "C": "Virtual Private Network (VPN)",
+      "D": "Software-defined wide area network (SD-WAN)",
+      "Answer": "C",
+      "AnswerText": "Virtual Private Network (VPN)"
+    },
+    {
+      "Question": "An Incident Response Manager (IRM) is responsible for centralizing and aggregating log data from firewalls, IDS, and application servers for analysis. What type of tool is the IRM primarily utilizing?",
+      "A": "Threat feed",
+      "B": "Data Loss Prevention (DLP)",
+      "C": "Packet capture",
+      "D": "Security Information and Event Management (SIEM)",
+      "Answer": "D",
+      "AnswerText": "Security Information and Event Management (SIEM)"
+    },
+    {
+      "Question": "In a change management process, which step ensures that all affected parties (including users, security staff, and developers) are informed about the proposed changes?",
+      "A": "Backout Plan",
+      "B": "Impact Analysis",
+      "C": "Maintenance Window",
+      "D": "Stakeholders review",
+      "Answer": "D",
+      "AnswerText": "Stakeholders review"
+    },
+    {
+      "Question": "Which cryptographic algorithm, derived from the older DES standard, applies the DES block cipher method three times to the same block of text?",
+      "A": "Twofish",
+      "B": "AES",
+      "C": "RSA",
+      "D": "Triple DES (3DES)",
+      "Answer": "D",
+      "AnswerText": "Triple DES (3DES)"
+    },
+    {
+      "Question": "What is the most effective method for securing network traffic that is being transmitted across the public Internet, often referred to as \"data in transit\" or \"data on the wire\"?",
+      "A": "Hashing",
+      "B": "Steganography",
+      "C": "Transport Layer Security (TLS)",
+      "D": "Tokenization",
+      "Answer": "C",
+      "AnswerText": "Transport Layer Security (TLS)"
+    },
+    {
+      "Question": "Which malware type is characterized by its intent to save all keystrokes entered on the infected machine?",
+      "A": "Spyware",
+      "B": "Adware",
+      "C": "Rootkit",
+      "D": "Keylogger",
+      "Answer": "D",
+      "AnswerText": "Keylogger"
+    },
+    {
+      "Question": "After an incident, the team reviews all actions taken during the recovery phase to identify vulnerabilities that allowed the attack or weaknesses in the response plan itself. This systematic effort is called:",
+      "A": "Digital forensics",
+      "B": "Threat hunting",
+      "C": "Incident detection",
+      "D": "Root cause analysis",
+      "Answer": "D",
+      "AnswerText": "Root cause analysis"
+    },
+    {
+      "Question": "Which standard set of security guidelines should Alyssa follow to harden the iOS devices used by her organization to align with common industry practices?",
+      "A": "NIST 800-111",
+      "B": "OWASP",
+      "C": "NIST RMF",
+      "D": "CIS benchmarks",
+      "Answer": "D",
+      "AnswerText": "CIS benchmarks"
+    },
+    {
+      "Question": "Which control category is exemplified by an organization conducting regular training sessions on recognizing social engineering tactics?",
+      "A": "Technical",
+      "B": "Managerial",
+      "C": "Physical",
+      "D": "Operational",
+      "Answer": "D",
+      "AnswerText": "Operational"
+    },
+    {
+      "Question": "In a Zero Trust Architecture (ZTA), which element acts as a gatekeeper, intercepting requests from subjects and either allowing or denying access to enterprise resources based on policy decisions?",
+      "A": "Policy Engine",
+      "B": "Activity Logs",
+      "C": "Policy Enforcement Point (PEP)",
+      "D": "Trust Broker",
+      "Answer": "C",
+      "AnswerText": "Policy Enforcement Point (PEP)"
+    },
+    {
+      "Question": "Which phase of the penetration testing life cycle involves installing backdoors or using other mechanisms to regain access to the network, even if the initial vulnerability is patched?",
+      "A": "Initial access",
+      "B": "Privilege escalation",
+      "C": "Pivoting",
+      "D": "Maintaining access / Persistence",
+      "Answer": "D",
+      "AnswerText": "Maintaining access / Persistence"
+    },
+    {
+      "Question": "The EU General Data Protection Regulation (GDPR) is primarily focused on regulating what specific concept in technology and business operations?",
+      "A": "Availability",
+      "B": "Risk management",
+      "C": "Compliance reporting",
+      "D": "Privacy and data protection",
+      "Answer": "D",
+      "AnswerText": "Privacy and data protection"
+    },
+    {
+      "Question": "A company that provides managed incident response services, including security monitoring and analysis, to external clients is best described by which acronym?",
+      "A": "MSP (Managed Service Provider)",
+      "B": "PaaS (Platform as a Service)",
+      "C": "SaaS (Software as a Service)",
+      "D": "MSSP (Managed Security Service Provider)",
+      "Answer": "D",
+      "AnswerText": "MSSP (Managed Security Service Provider)"
+    },
+    {
+      "Question": "Which type of access control system dynamically grants or denies access based on a person's name, job title, time of day, or other context-aware characteristics?",
+      "A": "Mandatory Access Control (MAC)",
+      "B": "Discretionary Access Control (DAC)",
+      "C": "Role-Based Access Control (RBAC)",
+      "D": "Attribute-Based Access Control (ABAC)",
+      "Answer": "D",
+      "AnswerText": "Attribute-Based Access Control (ABAC)"
+    },
+    {
+      "Question": "What is the objective when applying the practice of obfuscation to software code?",
+      "A": "To ensure non-repudiation.",
+      "B": "To create a unique, fixed-length string for integrity checks.",
+      "C": "To make it intentionally difficult for humans to understand how the code works.",
+      "D": "To provide confidentiality through mathematical computation.",
+      "Answer": "C",
+      "AnswerText": "To make it intentionally difficult for humans to understand how the code works."
+    },
+    {
+      "Question": "An organization chooses a deployment model where employees can bring their own devices, but corporate data and applications are intentionally segregated from personal data using a separate operating environment. This technique is called:",
+      "A": "Geofencing",
+      "B": "VDI",
+      "C": "Containerization",
+      "D": "Virtualization",
+      "Answer": "C",
+      "AnswerText": "Containerization"
+    },
+    {
+      "Question": "A sophisticated attack scenario where the attacker has full access to the plaintext message and its corresponding encrypted ciphertext is known as a:",
+      "A": "Cipher text attack",
+      "B": "Brute force attack",
+      "C": "Known plain text/cipher text attack",
+      "D": "Dictionary attack",
+      "Answer": "C",
+      "AnswerText": "Known plain text/cipher text attack"
+    },
+    {
+      "Question": "What is the goal of digital forensics analysis when used in conjunction with intelligence and counterintelligence efforts?",
+      "A": "To train staff on incident response procedures.",
+      "B": "To preserve the chain of custody for evidence.",
+      "C": "To analyze adversary actions and technology, including TTPs.",
+      "D": "To prioritize vulnerability remediation.",
+      "Answer": "C",
+      "AnswerText": "To analyze adversary actions and technology, including TTPs."
+    },
+    {
+      "Question": "Which authentication protocol is generally considered one of the most secure EAP standards and requires certificates on both the 802.1x server (RADIUS) and the clients?",
+      "A": "EAP (Extensible Authentication Protocol)",
+      "B": "PEAP (Protected EAP)",
+      "C": "EAP-FAST (EAP Flexible Authentication with Secure Tunneling)",
+      "D": "EAP-TLS (EAP Transport Layer Security)",
+      "Answer": "D",
+      "AnswerText": "EAP-TLS (EAP Transport Layer Security)"
+    },
+    {
+      "Question": "The concept of ensuring that when a key is used to encrypt a message, only the corresponding opposite key (e.g., private key if encrypted by public key) can decrypt it, is fundamental to:",
+      "A": "Stream ciphers",
+      "B": "Symmetric encryption",
+      "C": "Asymmetric encryption",
+      "D": "Hashing algorithms",
+      "Answer": "C",
+      "AnswerText": "Asymmetric encryption"
+    },
+    {
+      "Question": "In vulnerability assessment, when a scanner reports a potential security flaw that does not actually exist in the system, what classification error has occurred?",
+      "A": "False negative",
+      "B": "Collision",
+      "C": "False positive",
+      "D": "Baseline deviation",
+      "Answer": "C",
+      "AnswerText": "False positive"
+    },
+    {
+      "Question": "The approach to network architecture that dictates there is no inherent trust boundary, requiring authentication and validation for every action, is called:",
+      "A": "Defense-in-depth",
+      "B": "Implicit Trust Architecture",
+      "C": "Zero Trust Architecture (ZTA)",
+      "D": "Castle and Moat",
+      "Answer": "C",
+      "AnswerText": "Zero Trust Architecture (ZTA)"
+    },
+    {
+      "Question": "Which framework is recommended for U.S. federal government agencies and contractors to manage and assess risk?",
+      "A": "NIST Cybersecurity Framework (CSF)",
+      "B": "Payment Card Industry Data Security Standard (PCI DSS)",
+      "C": "NIST Risk Management Framework (RMF)",
+      "D": "ISO 27001",
+      "Answer": "C",
+      "AnswerText": "NIST Risk Management Framework (RMF)"
+    },
+    {
+      "Question": "When evaluating potential incident indicators, what log event might suggest an external attacker has successfully compromised an internal system?",
+      "A": "Standard login activity",
+      "B": "Out-of-cycle logging",
+      "C": "Normal resource consumption",
+      "D": "Account lockout",
+      "Answer": "B",
+      "AnswerText": "Out-of-cycle logging"
+    },
+    {
+      "Question": "To protect sensitive passwords stored as hashes from brute force or dictionary attacks, random data is added to the end of the password before hashing it. This input data is known as:",
+      "A": "IV (Initialization Vector)",
+      "B": "Nonce",
+      "C": "Key stretching",
+      "D": "Salt",
+      "Answer": "D",
+      "AnswerText": "Salt"
+    },
+    {
+      "Question": "Which category of threat actor is typically characterized by an internal individual who is already authorized but uses that authorization to intentionally or accidentally misuse company resources?",
+      "A": "Nation-state actor",
+      "B": "Hacktivist",
+      "C": "Organized crime",
+      "D": "Insider threat",
+      "Answer": "D",
+      "AnswerText": "Insider threat"
+    },
+    {
+      "Question": "In the NIST Zero Trust model, which element is comprised of the Policy Engine and Policy Administrator?",
+      "A": "Data Plane",
+      "B": "Subject",
+      "C": "Enterprise Resource",
+      "D": "Control Plane",
+      "Answer": "D",
+      "AnswerText": "Control Plane"
+    },
+    {
+      "Question": "When an IT infrastructure change fails unexpectedly, implementing the designated Backout Plan would be classified as which type of security control function?",
+      "A": "Detective",
+      "B": "Preventive",
+      "C": "Deterrent",
+      "D": "Corrective",
+      "Answer": "D",
+      "AnswerText": "Corrective"
+    },
+    {
+      "Question": "Which essential component must be included in an exception request for a security policy?",
+      "A": "Proposed revision to the security policy",
+      "B": "Delegation of authority",
+      "C": "Business justification for the exception",
+      "D": "Assessment of competitive advantage",
+      "Answer": "C",
+      "AnswerText": "Business justification for the exception"
+    },
+    {
+      "Question": "During the digital forensics process, what activity involves obtaining forensic images (full disk copies) of data and ensuring that they are protected from alteration?",
+      "A": "Chain of custody",
+      "B": "E-discovery",
+      "C": "Preservation",
+      "D": "Acquisition",
+      "Answer": "D",
+      "AnswerText": "Acquisition"
+    },
+    {
+      "Question": "Which element of the Common Vulnerability Scoring System (CVSS) metric determines the type of access (e.g., None, Low, High) an attacker must have on a target system to exploit the vulnerability?",
+      "A": "Attack Vector (AV)",
+      "B": "Confidentiality Impact (C)",
+      "C": "Attack Complexity (AC)",
+      "D": "Privileges Required (PR)",
+      "Answer": "D",
+      "AnswerText": "Privileges Required (PR)"
+    },
+    {
+      "Question": "An organization needs to secure electronic payments using an older, standardized symmetric block cipher often associated with credit card transactions. Which algorithm is best suited?",
+      "A": "Advanced Encryption Standard (AES)",
+      "B": "Twofish",
+      "C": "RSA",
+      "D": "Triple DES (3DES)",
+      "Answer": "D",
+      "AnswerText": "Triple DES (3DES)"
+    },
+    {
+      "Question": "Which wireless connectivity option is most commonly secured using the Extensible Authentication Protocol (EAP) framework in conjunction with a RADIUS server?",
+      "A": "IoT devices",
+      "B": "Bluetooth",
+      "C": "Cellular",
+      "D": "Wi-Fi (802.1x)",
+      "Answer": "D",
+      "AnswerText": "Wi-Fi (802.1x)"
+    },
+    {
+      "Question": "In symmetric cryptography, if Mike wants to send David an encrypted message, what key must Mike use to encrypt the message?",
+      "A": "Mike's private key",
+      "B": "Mike's public key",
+      "C": "David's public key",
+      "D": "Shared secret key",
+      "Answer": "D",
+      "AnswerText": "Shared secret key"
+    },
+    {
+      "Question": "Which document identifies how business processes should deal with both minor and disaster-level disruptions, ensuring that business processes can still function during an incident, even if at a limited scale?",
+      "A": "Incident Management Plan",
+      "B": "Disaster Recovery Plan (DRP)",
+      "C": "Business Continuity Plan (BCP)",
+      "D": "Security Policy",
+      "Answer": "C",
+      "AnswerText": "Business Continuity Plan (BCP)"
+    },
+    {
+      "Question": "What technique involves security professionals adopting an attacker's mindset to proactively search the organization's infrastructure for evidence or artifacts left behind by a successful compromise?",
+      "A": "Penetration testing",
+      "B": "Vulnerability scanning",
+      "C": "Digital forensics",
+      "D": "Threat hunting",
+      "Answer": "D",
+      "AnswerText": "Threat hunting"
+    },
+    {
+      "Question": "Which type of password attack involves creating encrypted versions of common dictionary words and comparing them against hashes in a stolen password file?",
+      "A": "Brute force",
+      "B": "Rainbow tables",
+      "C": "Dictionary attack",
+      "D": "Known ciphertext attack",
+      "Answer": "C",
+      "AnswerText": "Dictionary attack"
+    },
+    {
+      "Question": "Which type of cryptographic algorithm is necessary to provide non-repudiation, ensuring the sender cannot deny having sent a message?",
+      "A": "Symmetric encryption",
+      "B": "Hashing",
+      "C": "Digital signatures",
+      "D": "Block ciphers",
+      "Answer": "C",
+      "AnswerText": "Digital signatures"
+    },
+    {
+      "Question": "An organization is consolidating security functions and WAN capabilities into a single, cloud-delivered service model. This architecture is known as:",
+      "A": "Software-defined wide area network (SD-WAN)",
+      "B": "Platform as a service (PaaS)",
+      "C": "Secure access service edge (SASE)",
+      "D": "Infrastructure as code (IaC)",
+      "Answer": "C",
+      "AnswerText": "Secure access service edge (SASE)"
+    },
+    {
+      "Question": "To ensure maximum security, Fred mandates that all network switches utilize port security, and that the administrative control interfaces are inaccessible from the production network segments. This implementation best describes the use of:",
+      "A": "Zero Trust Segmentation",
+      "B": "Network Access Control (NAC)",
+      "C": "Out-of-band management",
+      "D": "Trunking",
+      "Answer": "C",
+      "AnswerText": "Out-of-band management"
+    },
+    {
+      "Question": "In wireless penetration testing, why is a deauthentication attack sometimes used?",
+      "A": "To prevent client Wi-Fi connectivity.",
+      "B": "To test RADIUS authentication resiliency.",
+      "C": "To forcibly disconnect clients to observe authentication information.",
+      "D": "To test the strength of the WPA3 SAE key exchange.",
+      "Answer": "C",
+      "AnswerText": "To forcibly disconnect clients to observe authentication information"
+    },
+    {
+      "Question": "Which phase in the penetration testing life cycle immediately follows \"Gaining access\" and focuses on exploiting elevated permissions on the newly accessed system?",
+      "A": "Reconnaissance",
+      "B": "Pivoting",
+      "C": "Persistence",
+      "D": "Privilege escalation",
+      "Answer": "D",
+      "AnswerText": "Privilege escalation"
+    },
+    {
+      "Question": "Which organization is responsible for creating and maintaining the Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) knowledge base, used for structuring threat hunting and incident response?",
+      "A": "NIST",
+      "B": "ISO",
+      "C": "CompTIA",
+      "D": "MITRE",
+      "Answer": "D",
+      "AnswerText": "MITRE"
+    },
+    {
+      "Question": "Which mobile device deployment model is characterized by the company owning and controlling all aspects of the device, typically allowing for no personal use or information?",
+      "A": "Bring Your Own Device (BYOD)",
+      "B": "Choose Your Own Device (CYOD)",
+      "C": "Corporate-owned, Personally enabled (COPE)",
+      "D": "Corporate-owned, Business-only (COBO)",
+      "Answer": "D",
+      "AnswerText": "Corporate-owned, Business-only (COBO)"
+    },
+    {
+      "Question": "Which phase in the incident response process focuses on eliminating the immediate cause of the threat, such as removing malicious software or patching the exploited vulnerability?",
+      "A": "Containment",
+      "B": "Detection",
+      "C": "Analysis",
+      "D": "Eradication",
+      "Answer": "D",
+      "AnswerText": "Eradication"
+    },
+    {
+      "Question": "If an organization fails to implement full-disk encryption on laptops as mandated by policy, the discovered deviation represents what type of gap?",
+      "A": "Operational",
+      "B": "Corrective",
+      "C": "Deterrent",
+      "D": "Preventive control gap",
+      "Answer": "D",
+      "AnswerText": "Preventive control gap"
+    },
+    {
+      "Question": "Rivest-Shamir-Adleman (RSA) is an asymmetric algorithm that relies on the modulus generated from combining two:",
+      "A": "Initialization Vectors",
+      "B": "Hashing algorithms",
+      "C": "Private keys",
+      "D": "Prime numbers",
+      "Answer": "D",
+      "AnswerText": "Prime numbers"
+    },
+    {
+      "Question": "Which authentication technology is not intended to authenticate users but instead serves as an authorization framework allowing third-party applications to access resources on behalf of a user?",
+      "A": "OpenID Connect (OIDC)",
+      "B": "Security Assertion Markup Language (SAML)",
+      "C": "Kerberos",
+      "D": "OAuth",
+      "Answer": "D",
+      "AnswerText": "OAuth"
+    },
+    {
+      "Question": "Penetration tests performed with no prior knowledge of the target's network or infrastructure simulate an external attacker \"coming in cold.\" This is known as a(n):",
+      "A": "Partially known environment test",
+      "B": "Integrated penetration test",
+      "C": "White box test",
+      "D": "Unknown environment test / Black box test",
+      "Answer": "D",
+      "AnswerText": "Unknown environment test / Black box test"
+    },
+    {
+      "Question": "In effective security compliance, what is considered a severe consequence of non-compliance, alongside fines and reputational damage?",
+      "A": "Increased competitive advantage",
+      "B": "Legal consequences",
+      "C": "Improved incident preparedness",
+      "D": "Lower risk management costs",
+      "Answer": "B",
+      "AnswerText": "Legal consequences"
+    },
+    {
+      "Question": "Which specialized tool detects unauthorized changes to critical files and reports on them periodically, helping detect breaches and maintain compliance?",
+      "A": "EDR",
+      "B": "NAC",
+      "C": "File Integrity Monitoring (FIM)",
+      "D": "Vulnerability Scanner",
+      "Answer": "C",
+      "AnswerText": "File Integrity Monitoring (FIM)"
+    },
+    {
+      "Question": "Which tool is specifically designed to enforce security settings across a Windows Active Directory domain by applying configuration baselines?",
+      "A": "SELinux",
+      "B": "CIS CAT",
+      "C": "Security Compliance Toolkit (SCT)",
+      "D": "Group Policy",
+      "Answer": "C",
+      "AnswerText": "Security Compliance Toolkit (SCT)"
+    },
+    {
+      "Question": "In the context of cryptography, which term refers to the art of cracking cryptographic systems or the study of methods used to defeat codes and ciphers?",
+      "A": "Cryptography",
+      "B": "Cryptology",
+      "C": "Cryptanalysis",
+      "D": "Cryptosystems",
+      "Answer": "C",
+      "AnswerText": "Cryptanalysis"
+    },
+    {
+      "Question": "When designing a disaster recovery solution, employing generators and an Uninterruptible Power Supply (UPS) is related to securing which area of resilience?",
+      "A": "Backups",
+      "B": "Site Considerations",
+      "C": "Platform Diversity",
+      "D": "Power",
+      "Answer": "D",
+      "AnswerText": "Power"
+    },
+    {
+      "Question": "An attacker gains unauthorized access to a system using an exploit. After successful access, the next step the attacker takes is to clean any traces of compromise, including log events and tools. What phase is this?",
+      "A": "Maintaining access",
+      "B": "Initial access",
+      "C": "Reconnaissance",
+      "D": "Covering tracks / Cleanup",
+      "Answer": "D",
+      "AnswerText": "Covering tracks / Cleanup"
+    },
+    {
+      "Question": "An organization calculates the Single Loss Expectancy (SLE) for a critical server as $30,000. The Annual Rate of Occurrence (ARO) for the threat impacting this server is estimated to be 0.2. What is the Annual Loss Expectancy (ALE)?",
+      "A": "$30,000",
+      "B": "$150,000",
+      "C": "$6,000",
+      "D": "$300,000",
+      "Answer": "C",
+      "AnswerText": "$6,000"
+    },
+    {
+      "Question": "A security analyst notes that a user's machine suddenly displayed a notice stating all files were encrypted and demanded payment in cryptocurrency. Which malware type is primarily associated with this behavior, as defined in the CompTIA Security+ objectives?",
+      "A": "Virus",
+      "B": "Trojan",
+      "C": "Keylogger",
+      "D": "Ransomware",
+      "Answer": "D",
+      "AnswerText": "Ransomware"
+    },
+    {
+      "Question": "An incident response team has successfully contained a malicious presence on a compromised system and verified that the threat has been thoroughly removed from the affected host and network environment. According to the formal incident response cycle outlined in the CompTIA Security+ objectives, what is the mandatory phase that immediately follows this activity?",
+      "A": "Detection",
+      "B": "Analysis",
+      "C": "Recovery",
+      "D": "Lessons Learned",
+      "Answer": "C",
+      "AnswerText": "Recovery"
+    },
+    {
+      "Question": "A cybersecurity professional implements full-disk encryption on all organizational laptops to prevent unauthorized parties from accessing sensitive information stored locally in the event the device is lost or stolen. What functional security control type best describes the intended effect of this implementation?",
+      "A": "Deterrent",
+      "B": "Corrective",
+      "C": "Detective",
+      "D": "Preventive",
+      "Answer": "D",
+      "AnswerText": "Preventive"
+    },
+    {
+      "Question": "A large financial institution leases Infrastructure as a Service (IaaS) virtual machines from a major public cloud provider, such as Microsoft Azure, but ensures that these compute resources are used exclusively by the institution, maintaining strict organizational control over access and resource sharing. What cloud deployment model is being utilized?",
+      "A": "Public cloud",
+      "B": "Hybrid cloud",
+      "C": "Community cloud",
+      "D": "Private cloud",
+      "Answer": "D",
+      "AnswerText": "Private cloud"
+    },
+    {
+      "Question": "A penetration tester conducts an attack by compromising a popular external website frequently visited by employees of the target organization, deploying malicious content there to infect target systems upon access. Which social engineering attack vector is the tester utilizing?",
+      "A": "Phishing",
+      "B": "Typosquatting",
+      "C": "Watering Hole attack",
+      "D": "Brand impersonation",
+      "Answer": "C",
+      "AnswerText": "Watering Hole attack"
+    },
+    {
+      "Question": "A security team is executing a system hardening plan for a new server deployment. The team identifies and disables several applications and background processes that are not essential for the server’s primary function to reduce potential exposure points. What core hardening technique is this team prioritizing?",
+      "A": "Installing Endpoint Detection and Response (EDR) software",
+      "B": "Changing default passwords and credentials",
+      "C": "Disabling unnecessary ports and protocols",
+      "D": "Implementing host-based Intrusion Prevention Systems (IPS)",
+      "Answer": "C",
+      "AnswerText": "Disabling unnecessary ports and protocols"
+    },
+    {
+      "Question": "A mandatory document in the organization's security framework specifies prescriptive technical guidance, requiring the use of Advanced Encryption Standard 256-bit (AES-256) for protecting specific categories of data in transit. This mandatory document is known as a(n):",
+      "A": "Policy",
+      "B": "Guideline",
+      "C": "Procedure",
+      "D": "Standard",
+      "Answer": "D",
+      "AnswerText": "Standard"
+    },
+    {
+      "Question": "Data is currently being protected in its stored state within a network-attached storage device, using encryption algorithms to ensure that the information remains obscured if accessed without authorization. Which term accurately describes the state of this data?",
+      "A": "Data in processing",
+      "B": "Data at rest",
+      "C": "Data in use",
+      "D": "Data in transit",
+      "Answer": "B",
+      "AnswerText": "Data at rest"
+    },
+    {
+      "Question": "During a digital forensic investigation that may lead to legal action, an analyst meticulously documents the entire history of an acquired drive image, including every transfer, handling event, and person who maintained custody of the evidence. This documentation process is crucial for maintaining the legal admissibility of the evidence and is known as the:",
+      "A": "Legal hold",
+      "B": "Preservation report",
+      "C": "Chain of custody",
+      "D": "Acquisition log",
+      "Answer": "C",
+      "AnswerText": "Chain of custody"
+    },
+    {
+      "Question": "A security administrator is configuring a host-based firewall on a legacy Linux server that cannot receive modern security patches. To mitigate the known vulnerabilities of the operating system, the administrator configures the firewall to allow connections only from specific internal IP addresses. What type of control best describes this implementation?",
+      "A": "Corrective control",
+      "B": "Technical control",
+      "C": "Compensating control",
+      "D": "Detective control",
+      "Answer": "C",
+      "AnswerText": "Compensating control"
+    },
+    {
+      "Question": "Which of the following is an example of a Managerial security control?",
+      "A": "Implementing intrusion prevention signatures on a firewall.",
+      "B": "Performing scheduled maintenance updates on critical systems.",
+      "C": "Conducting a periodic risk assessment of critical infrastructure.",
+      "D": "Deploying biometric access control systems for the datacenter.",
+      "Answer": "C",
+      "AnswerText": "Conducting a periodic risk assessment of critical infrastructure."
+    },
+    {
+      "Question": "An organization is evaluating cryptography methods for a system that must be extremely scalable, supporting communication among thousands of unique users without significant key management overhead. Which cryptographic type should be favored?",
+      "A": "Hashing algorithms",
+      "B": "Symmetric encryption algorithms",
+      "C": "Stream ciphers",
+      "D": "Asymmetric encryption algorithms",
+      "Answer": "D",
+      "AnswerText": "Asymmetric encryption algorithms"
+    },
+    {
+      "Question": "A forensic investigator is analyzing a potential intrusion and attempts to read data that was actively processed by the system's CPU and stored in RAM just prior to shutdown. What state of data is the investigator attempting to recover?",
+      "A": "Data at rest",
+      "B": "Data in transit",
+      "C": "Data in use",
+      "D": "Data obfuscated",
+      "Answer": "C",
+      "AnswerText": "Data in use"
+    },
+    {
+      "Question": "A database administrator is implementing a policy to obscure credit card numbers in a log file, requiring that only the last four digits remain visible to staff for reconciliation purposes. Which data minimization technique is the administrator applying?",
+      "A": "Hashing",
+      "B": "Tokenization",
+      "C": "Steganography",
+      "D": "Data masking",
+      "Answer": "D",
+      "AnswerText": "Data masking"
+    },
+    {
+      "Question": "An organization constructing a new data center wishes to implement a physical control designed specifically to prevent unauthorized access via speeding vehicles attempting to breach the perimeter. Which control should be installed?",
+      "A": "Security guards",
+      "B": "Fencing with barbed wire",
+      "C": "Bollards",
+      "D": "Access control vestibules",
+      "Answer": "C",
+      "AnswerText": "Bollards"
+    },
+    {
+      "Question": "A user downloads an application that appears to be a free utility tool. Upon execution, the application covertly installs a remote access backdoor without the user's knowledge, granting unauthorized control. Which type of malware best describes the initial legitimate-looking program?",
+      "A": "Worm",
+      "B": "Rootkit",
+      "C": "Crypto-malware",
+      "D": "Trojan",
+      "Answer": "D",
+      "AnswerText": "Trojan"
+    },
+    {
+      "Question": "A security team utilizes a standardized framework to provide numeric scores and context to newly discovered vulnerabilities, helping to quantify their severity and impact relative to external assessments. Which framework component is being used for this prioritization?",
+      "A": "Common Vulnerability Enumeration (CVE)",
+      "B": "Exposure Factor",
+      "C": "Common Vulnerability Scoring System (CVSS)",
+      "D": "Annualized Rate of Occurrence (ARO)",
+      "Answer": "C",
+      "AnswerText": "Common Vulnerability Scoring System (CVSS)"
+    },
+    {
+      "Question": "An attacker successfully manipulates a client and server negotiating a secure connection to force the use of an older, less secure cryptographic protocol suite, enabling subsequent decryption of the session traffic. What type of cryptographic attack occurred?",
+      "A": "Birthday attack",
+      "B": "Downgrade attack",
+      "C": "Collision attack",
+      "D": "Man-in-the-middle attack",
+      "Answer": "B",
+      "AnswerText": "Downgrade attack"
+    },
+    {
+      "Question": "What is the fundamental difference in mechanism between vulnerability scanning and penetration testing?",
+      "A": "Scanning uses manual processes, while penetration testing uses automated exploitation frameworks.",
+      "B": "Scanning is a simulation of an attack, while testing is a passive observation of weaknesses.",
+      "C": "Scanning passively identifies weaknesses, while testing actively exploits them to prove viability.",
+      "D": "Scanning focuses on internal systems, while penetration testing focuses exclusively on external perimeters.",
+      "Answer": "C",
+      "AnswerText": "Scanning passively identifies weaknesses, while testing actively exploits them to prove viability."
+    },
+    {
+      "Question": "A security consultant begins the reconnaissance phase of a penetration test by querying publicly available domain registration records to gather organizational metadata without directly engaging the client's network. Which type of reconnaissance is the consultant performing?",
+      "A": "Active reconnaissance",
+      "B": "Packet capture",
+      "C": "Footprinting",
+      "D": "Passive reconnaissance",
+      "Answer": "D",
+      "AnswerText": "Passive reconnaissance"
+    },
+    {
+      "Question": "Which motivational factor best characterizes a threat actor attempting to damage a former employer's reputation by publicly leaking sensitive operational data?",
+      "A": "Financial gain",
+      "B": "Espionage",
+      "C": "Philosophical beliefs",
+      "D": "Revenge",
+      "Answer": "D",
+      "AnswerText": "Revenge"
+    },
+    {
+      "Question": "A consulting firm is hired to conduct a penetration test targeting a specific customer-facing web application. The client provides the testers with the application's URL and the device type of the hosting server but withholds configuration details and source code access. Which classification best describes this penetration test type?",
+      "A": "Unknown environment",
+      "B": "Partially known environment",
+      "C": "Integrated testing",
+      "D": "Known environment",
+      "Answer": "B",
+      "AnswerText": "Partially known environment"
+    },
+    {
+      "Question": "A security analyst finds multiple high-risk cross-site scripting (XSS) vulnerabilities in a web application stemming from user input fields. Which application security technique should the analyst recommend the developer implement to mitigate this class of vulnerability?",
+      "A": "Code signing",
+      "B": "Version control",
+      "C": "Input validation",
+      "D": "Secure cookie handling",
+      "Answer": "C",
+      "AnswerText": "Input validation"
+    },
+    {
+      "Question": "Following a successful vulnerability assessment, the operations team remediates all identified high-priority security weaknesses. Which activity should immediately follow remediation to ensure the overall security posture is improved?",
+      "A": "Conduct a full security audit.",
+      "B": "Initiate a penetration test.",
+      "C": "Perform a rescan of the affected systems.",
+      "D": "Update the organization’s acceptable use policy.",
+      "Answer": "C",
+      "AnswerText": "Perform a rescan of the affected systems."
+    },
+    {
+      "Question": "Which symmetric algorithm was widely used until its replacement by AES, due largely to the vulnerability caused by its small 56-bit key size?",
+      "A": "Twofish",
+      "B": "RC4",
+      "C": "Data Encryption Standard (DES)",
+      "D": "3DES",
+      "Answer": "C",
+      "AnswerText": "Data Encryption Standard (DES)"
+    },
+    {
+      "Question": "An attacker sends numerous packets with spoofed MAC addresses to a switch port to deplete the available addresses in the network's DHCP pool, denying service to legitimate clients. Which specific network attack vector is the attacker utilizing?",
+      "A": "ARP poisoning",
+      "B": "Amplified DDoS",
+      "C": "DHCP starvation attack",
+      "D": "Ping flood",
+      "Answer": "C",
+      "AnswerText": "DHCP starvation attack"
+    },
+    {
+      "Question": "An organization requires that all sensitive data stored on employee laptops be protected from unauthorized access, even if the device is lost or stolen. Which encryption level best satisfies this requirement?",
+      "A": "Partition encryption",
+      "B": "File-level encryption",
+      "C": "Database encryption",
+      "D": "Full-disk encryption",
+      "Answer": "D",
+      "AnswerText": "Full-disk encryption"
+    },
+    {
+      "Question": "A network administrator wants to use a standard for access control in the wireless network that allows integration with a centralized RADIUS server for enterprise user authentication. Which standard fulfills this requirement?",
+      "A": "IEEE 802.1Q",
+      "B": "IEEE 802.1X",
+      "C": "IEEE 802.1D",
+      "D": "IEEE 802.3",
+      "Answer": "B",
+      "AnswerText": "IEEE 802.1X"
+    },
+    {
+      "Question": "In a Zero Trust Architecture (ZTA), which core component is responsible for forwarding requests from subjects and acting on decisions made by the Policy Engine to grant or deny resource access?",
+      "A": "Policy Administrator",
+      "B": "Enterprise Resource",
+      "C": "Policy Enforcement Point",
+      "D": "Subject",
+      "Answer": "C",
+      "AnswerText": "Policy Enforcement Point"
+    },
+    {
+      "Question": "A security engineer needs to protect passwords stored in the authentication database against brute-force attacks by iteratively hashing them using the Blowfish cipher. Which specific key derivation function accomplishes this goal?",
+      "A": "PBKDF2",
+      "B": "ROT13",
+      "C": "Bcrypt",
+      "D": "SHA-256",
+      "Answer": "C",
+      "AnswerText": "Bcrypt"
+    },
+    {
+      "Question": "A highly secure facility entrance uses a physical control consisting of two interlocking doors, ensuring that only one person can enter after successful authentication and physically preventing tailgating by unauthorized individuals. What is this security control called?",
+      "A": "Faraday cage",
+      "B": "Bollard",
+      "C": "Access control vestibule",
+      "D": "Air gap",
+      "Answer": "C",
+      "AnswerText": "Access control vestibule"
+    },
+    {
+      "Question": "When selecting a modern block cipher mode of operation for securing bulk data, a security architect prioritizes mechanisms that guarantee data authenticity and integrity along with confidentiality. Which mode is commonly recognized for providing these features?",
+      "A": "Electronic Code Book (ECB)",
+      "B": "Cipher Block Chaining (CBC)",
+      "C": "Galois Counter Mode (GCM)",
+      "D": "Counter Mode (CTR)",
+      "Answer": "C",
+      "AnswerText": "Galois Counter Mode (GCM)"
+    },
+    {
+      "Question": "Richard intends to send a message to Grace and apply a digital signature to assure her that the message originated from him. What key must Richard use to create the digital signature?",
+      "A": "Grace's public key",
+      "B": "Richard's public key",
+      "C": "Grace's private key",
+      "D": "Richard's private key",
+      "Answer": "D",
+      "AnswerText": "Richard's private key"
+    },
+    {
+      "Question": "A security system grants users access rights to a resource based on a combination of factors, including their current job title, the time of day, and the sensitivity classification of the data they are requesting. Which access control model is being utilized?",
+      "A": "Role-Based Access Control (RBAC)",
+      "B": "Discretionary Access Control (DAC)",
+      "C": "Rule-Based Access Control (RuBAC)",
+      "D": "Attribute-Based Access Control (ABAC)",
+      "Answer": "D",
+      "AnswerText": "Attribute-Based Access Control (ABAC)"
+    },
+    {
+      "Question": "An organization utilizes multiple Software as a Service (SaaS) applications and needs a single solution to enforce uniform security policies, provide visibility into cloud usage, and manage single sign-on across all third-party cloud environments. Which capability best meets this requirement?",
+      "A": "Software-Defined Wide Area Network (SD-WAN)",
+      "B": "Trusted Platform Module (TPM)",
+      "C": "Cloud Access Security Broker (CASB)",
+      "D": "Encrypted Gateway",
+      "Answer": "C",
+      "AnswerText": "Cloud Access Security Broker (CASB)"
+    },
+    {
+      "Question": "During an incident response engagement, the Cyber Incident Response Team (CIRT) gathers evidence, identifies related events, and determines the scope and underlying causes of the malicious activity. Which phase of the incident response process is the CIRT currently executing?",
+      "A": "Detection",
+      "B": "Analysis",
+      "C": "Containment",
+      "D": "Eradication",
+      "Answer": "B",
+      "AnswerText": "Analysis"
+    },
+    {
+      "Question": "According to the standard incident response process defined for the Security+ exam, which activity immediately follows the Analysis phase?",
+      "A": "Eradication",
+      "B": "Preparation",
+      "C": "Recovery",
+      "D": "Containment",
+      "Answer": "D",
+      "AnswerText": "Containment"
+    },
+    {
+      "Question": "A business continuity team wants to exercise its resilience and recovery procedures in the least disruptive manner possible, focusing solely on discussion and hypothetical decision-making rather than simulating actual system failovers. Which testing exercise should they conduct?",
+      "A": "Functional exercise",
+      "B": "Simulation",
+      "C": "Walkthrough",
+      "D": "Tabletop exercise",
+      "Answer": "D",
+      "AnswerText": "Tabletop exercise"
+    },
+    {
+      "Question": "To permanently dispose of storage media containing highly sensitive data, an organization uses a device that exposes the media to a strong magnetic field. Which data destruction method is being applied?",
+      "A": "Pulverizing",
+      "B": "Shredding",
+      "C": "Degaussing",
+      "D": "Burning",
+      "Answer": "C",
+      "AnswerText": "Degaussing"
+    },
+    {
+      "Question": "A security operations center (SOC) needs a tool to centralize logs from firewalls, servers, and applications, and correlate these events to proactively identify security incidents and potential breaches. Which solution best fulfills this need?",
+      "A": "DLP system",
+      "B": "Intrusion Detection System (IDS)",
+      "C": "Security Information and Event Management (SIEM) system",
+      "D": "Packet capture utility",
+      "Answer": "C",
+      "AnswerText": "Security Information and Event Management (SIEM) system"
+    },
+    {
+      "Question": "A critical infrastructure organization designs its security devices to ensure that if a control fails, traffic flow is maintained without interruption, prioritizing service availability over strict security lockdown. Which failure mode attribute has been selected?",
+      "A": "Fail-closed",
+      "B": "Fail-open",
+      "C": "High availability",
+      "D": "Non-repudiation",
+      "Answer": "B",
+      "AnswerText": "Fail-open"
+    },
+    {
+      "Question": "An incident responder is investigating unusual network communication patterns, needing to see the source, destination, protocol, and traffic volume for a connection, but they do not require the actual payload data of the packets. Which data source should the responder utilize?",
+      "A": "Packet capture",
+      "B": "Syslog",
+      "C": "Operating system security logs",
+      "D": "NetFlow data",
+      "Answer": "D",
+      "AnswerText": "NetFlow data"
+    },
+    {
+      "Question": "WPA3 improves wireless security over WPA2 by replacing the pre-shared key (PSK) exchange with which more secure authentication protocol designed to resist offline dictionary attacks?",
+      "A": "EAP-TLS",
+      "B": "Simultaneous Authentication of Equals (SAE)",
+      "C": "Challenge Handshake Authentication Protocol (CHAP)",
+      "D": "Protected Extensible Authentication Protocol (PEAP)",
+      "Answer": "B",
+      "AnswerText": "Simultaneous Authentication of Equals (SAE)"
+    },
+    {
+      "Question": "A network engineer wants to secure the administrative interfaces for all switches and routers, preventing access attempts that traverse the regular production network segments. Which design solution should be implemented?",
+      "A": "Network Access Control (NAC)",
+      "B": "Virtual LAN (VLAN) trunking",
+      "C": "Port security",
+      "D": "Out-of-band management",
+      "Answer": "D",
+      "AnswerText": "Out-of-band management"
+    },
+    {
+      "Question": "During the activation of the Incident Response Team (IRT) for a severe incident, which designated role is primarily responsible for coordinating communications and overall activities among team members?",
+      "A": "Head of Information Technology",
+      "B": "Incident Response Manager (IRM)",
+      "C": "Technical Lead",
+      "D": "Chief Information Security Officer (CISO)",
+      "Answer": "B",
+      "AnswerText": "Incident Response Manager (IRM)"
+    },
+    {
+      "Question": "A systems administrator managing legacy industrial control systems (ICS) running hardened Linux hosts needs to implement Mandatory Access Control (MAC) policies. Which kernel security module provides this capability on Linux systems?",
+      "A": "Group Policy",
+      "B": "SELinux",
+      "C": "Trusted Platform Module (TPM)",
+      "D": "Endpoint Detection and Response (EDR)",
+      "Answer": "B",
+      "AnswerText": "SELinux"
+    },
+    {
+      "Question": "Which method provides the most consistent and efficient means for an organization to perform daily checks to verify that all server security configurations adhere to established baselines?",
+      "A": "Manual audit checklist review",
+      "B": "Automation via scripting/configuration management",
+      "C": "Periodic external assessment",
+      "D": "Attestation reports",
+      "Answer": "B",
+      "AnswerText": "Automation via scripting/configuration management"
+    },
+    {
+      "Question": "An organization operates a wireless guest network and must ensure that personally identifiable information (PII) is not transmitted outside the network perimeter by guest devices. Which technology is specifically designed to enforce this type of data protection policy?",
+      "A": "Network segmentation",
+      "B": "Host-based encryption",
+      "C": "Data Loss Prevention (DLP)",
+      "D": "Endpoint Detection and Response (EDR)",
+      "Answer": "C",
+      "AnswerText": "Data Loss Prevention (DLP)"
+    },
+    {
+      "Question": "A threat intelligence team is collaborating with incident responders by providing a comprehensive, structured knowledgebase of adversary tactics, techniques, and procedures (TTPs) observed in the wild. Which framework are they likely utilizing?",
+      "A": "CIA triad",
+      "B": "NIST Risk Management Framework (RMF)",
+      "C": "ITIL",
+      "D": "MITRE ATT&CK",
+      "Answer": "D",
+      "AnswerText": "MITRE ATT&CK"
+    },
+    {
+      "Question": "A risk manager calculates that a specific server failure could result in a Single Loss Expectancy (SLE) of $50,000 and determines the Annual Rate of Occurrence (ARO) for this event is 0.2. What is the calculated Annualized Loss Expectancy (ALE)?",
+      "A": "$10,000",
+      "B": "$250,000",
+      "C": "$50,000",
+      "D": "$10,200",
+      "Answer": "A",
+      "AnswerText": "$10,000"
+    },
+    {
+      "Question": "An organization is highly concerned about the significant financial impact of a large-scale data breach and decides to acquire cyber liability insurance to cover potential legal fees and recovery costs. Which risk management strategy does this action represent?",
+      "A": "Risk acceptance",
+      "B": "Risk avoidance",
+      "C": "Risk mitigation",
+      "D": "Risk transference",
+      "Answer": "D",
+      "AnswerText": "Risk transference"
+    },
+    {
+      "Question": "In Business Impact Analysis (BIA), what metric defines the maximum length of time an organization can tolerate a system or critical business process being down after an incident before suffering unacceptable consequences?",
+      "A": "Mean Time to Repair (MTTR)",
+      "B": "Recovery Point Objective (RPO)",
+      "C": "Recovery Time Objective (RTO)",
+      "D": "Annualized Rate of Occurrence (ARO)",
+      "Answer": "C",
+      "AnswerText": "Recovery Time Objective (RTO)"
+    },
+    {
+      "Question": "Within a security governance framework, which type of document mandates the specific technical implementation requirements necessary to comply with a high-level policy?",
+      "A": "Procedure",
+      "B": "Guideline",
+      "C": "Standard",
+      "D": "Policy",
+      "Answer": "C",
+      "AnswerText": "Standard"
+    },
+    {
+      "Question": "Which regulatory or industry standard framework is mandatory for merchants that process, store, or transmit credit card data?",
+      "A": "ISO 27001",
+      "B": "EU General Data Protection Regulation (GDPR)",
+      "C": "Payment Card Industry Data Security Standard (PCI DSS)",
+      "D": "NIST Cybersecurity Framework (CSF)",
+      "Answer": "C",
+      "AnswerText": "Payment Card Industry Data Security Standard (PCI DSS)"
+    },
+    {
+      "Question": "An organization sends simulated phishing emails to employees. If an employee clicks a link, they are redirected to a training program explaining how to identify malicious content. What is the primary purpose of this exercise?",
+      "A": "To enforce the use of strong passwords across the organization.",
+      "B": "To detect compromised credentials for third-party services.",
+      "C": "To provide employees with security awareness training.",
+      "D": "To test the effectiveness of the network firewall rules.",
+      "Answer": "C",
+      "AnswerText": "To provide employees with security awareness training."
+    },
+    {
+      "Question": "A large enterprise organization is developing a formal plan that specifies the detailed action lists, emergency contacts, and the ordered steps required for IT operations staff to restore core technical services following a catastrophic infrastructure failure. Which plan is the organization developing?",
+      "A": "Business Continuity Plan (BCP)",
+      "B": "Incident Response Plan (IRP)",
+      "C": "Disaster Recovery Plan (DRP)",
+      "D": "Business Resumption Plan",
+      "Answer": "C",
+      "AnswerText": "Disaster Recovery Plan (DRP)"
+    },
+    {
+      "Question": "A Chief Information Security Officer (CISO) initiates a project to adopt the NIST Cybersecurity Framework (CSF). The first major task involves comparing the current security control environment against the controls recommended by the CSF to identify discrepancies. What is this comparative process called?",
+      "A": "Risk analysis",
+      "B": "Vulnerability assessment",
+      "C": "Gap analysis",
+      "D": "Due diligence",
+      "Answer": "C",
+      "AnswerText": "Gap analysis"
+    },
+    {
+      "Question": "As part of defining its Business Continuity Plan (BCP), an organization is tasked with determining the number of staff members required in various departments to maintain essential business functions during a prolonged disruption. Which activity best describes this determination?",
+      "A": "Risk identification",
+      "B": "Capacity planning",
+      "C": "Geographic dispersion planning",
+      "D": "Mean time to between failures (MTBF) calculation",
+      "Answer": "B",
+      "AnswerText": "Capacity planning"
+    },
+    {
+      "Question": "Which formal document is used to log all identified risks, define their probability and impact, list specific mitigation strategies, and assign responsible parties (risk owners)?",
+      "A": "Security Policy",
+      "B": "Business Impact Analysis (BIA)",
+      "C": "Risk Register",
+      "D": "Acceptable Use Policy (AUP)",
+      "Answer": "C",
+      "AnswerText": "Risk Register"
+    },
+    {
+      "Question": "Matt is updating the organization's threat assessment process. What category of control is Matt implementing?",
+      "A": "Operational",
+      "B": "Technical",
+      "C": "Corrective",
+      "D": "Managerial",
+      "Answer": "D",
+      "AnswerText": "Managerial"
+    },
+    {
+      "Question": "Chris is responding to a security incident that compromised one of his organization's web servers. He believes that the attackers defaced one or more pages on the website. What cybersecurity objective did this attack violate?",
+      "A": "Confidentiality",
+      "B": "Nonrepudiation",
+      "C": "Integrity",
+      "D": "Availability",
+      "Answer": "C",
+      "AnswerText": "Integrity"
+    },
+    {
+      "Question": "What compliance regulation most directly affects the operations of a health-care provider?",
+      "A": "HIPAA",
+      "B": "PCI DSS",
+      "C": "GLBA",
+      "D": "SOX",
+      "Answer": "A",
+      "AnswerText": "HIPAA"
+    },
+    {
+      "Question": "Randy believes that a system that he is responsible for was infected after a user picked up a USB drive and plugged it in. The user claims that they only opened one file on the drive to see who might own it. What type of malware is most likely involved?",
+      "A": "A virus",
+      "B": "A worm",
+      "C": "A trojan",
+      "D": "A spyware tool",
+      "Answer": "C",
+      "AnswerText": "A trojan"
+    },
+    {
+      "Question": "Renee is configuring her vulnerability management solution to perform credentialed scans of servers on her network. What type of account should she provide to the scanner?",
+      "A": "Domain administrator",
+      "B": "Local administrator",
+      "C": "Root",
+      "D": "Read-only",
+      "Answer": "B",
+      "AnswerText": "Local administrator"
+    },
+    {
+      "Question": "Tara recently analyzed the results of a vulnerability scan report and found that a vulnerability reported by the scanner did not exist because the system was actually patched as specified. What type of error occurred?",
+      "A": "False positive",
+      "B": "False negative",
+      "C": "True positive",
+      "D": "True negative",
+      "Answer": "A",
+      "AnswerText": "False positive"
+    },
+    {
+      "Question": "Which type of multifactor authentication is considered the least secure?",
+      "A": "HOTP",
+      "B": "SMS",
+      "C": "TOTP",
+      "D": "Biometric",
+      "Answer": "B",
+      "AnswerText": "SMS"
+    },
+    {
+      "Question": "Alyssa has identified malware on a system. She removes the system from the network to ensure that it cannot impact other systems. What technique has she used to deal with this system?",
+      "A": "Quarantine",
+      "B": "Segmentation",
+      "C": "Converted it to agentless",
+      "D": "Deny listing",
+      "Answer": "A",
+      "AnswerText": "Quarantine"
+    },
+    {
+      "Question": "Joe is authoring a document that explains to system administrators one way in which they might comply with the organization's requirement to encrypt all laptops. What type of document is Joe writing?",
+      "A": "Policy",
+      "B": "Guideline",
+      "C": "Procedure",
+      "D": "Standard",
+      "Answer": "B",
+      "AnswerText": "Guideline"
+    },
+    {
+      "Question": "Brian recently conducted a risk mitigation exercise and has determined the level of risk that remains after implementing a series of controls. What term best describes this risk?",
+      "A": "Inherent risk",
+      "B": "Control risk",
+      "C": "Risk appetite",
+      "D": "Residual risk",
+      "Answer": "D",
+      "AnswerText": "Residual risk"
+    },
+    {
+      "Question": "What is the primary function of an encryption algorithm?",
+      "A": "To convert plaintext into a human-readable format.",
+      "B": "To transform data into meaningless ciphertext that can be unscrambled.",
+      "C": "To prevent unauthorized access by physically securing data centers.",
+      "D": "To determine the integrity of a message through hashing.",
+      "Answer": "B",
+      "AnswerText": "To transform data into meaningless ciphertext that can be unscrambled."
+    },
+    {
+      "Question": "A Trusted Platform Module (TPM) chip in a computer is primarily used for what two functions?",
+      "A": "Securing network traffic and providing VPN access.",
+      "B": "Storing user credentials and managing application licenses.",
+      "C": "Securing the integrity of the machine boot process and storing disk volume encryption keys.",
+      "D": "Accelerating graphical processing and managing system memory.",
+      "Answer": "C",
+      "AnswerText": "Securing the integrity of the machine boot process and storing disk volume encryption keys."
+    },
+    {
+      "Question": "Which type of encryption uses a single \"secret\" key for both encryption and decryption?",
+      "A": "Asymmetric encryption",
+      "B": "Public key encryption",
+      "C": "Symmetric encryption",
+      "D": "Hashing algorithm",
+      "Answer": "C",
+      "AnswerText": "Symmetric encryption"
+    },
+    {
+      "Question": "According to the incident response cycle used by the Security+ exam, what is the first item in the cycle?",
+      "A": "Containment",
+      "B": "Eradication",
+      "C": "Preparation",
+      "D": "Recovery",
+      "Answer": "C",
+      "AnswerText": "Preparation"
+    },
+    {
+      "Question": "Which cryptographic mechanism ensures that a message's sender cannot deny having sent it, typically by using a private key to sign the message?",
+      "A": "Symmetric encryption",
+      "B": "Hashing",
+      "C": "Digital signature",
+      "D": "Key exchange",
+      "Answer": "C",
+      "AnswerText": "Digital signature"
+    },
+    {
+      "Question": "Which type of malware is characterized by self-copying and self-replication, and requires an infection mechanism like a thumb drive or network share to spread, rather than spreading via vulnerable services?",
+      "A": "Ransomware",
+      "B": "Trojan",
+      "C": "Virus",
+      "D": "Rootkit",
+      "Answer": "C",
+      "AnswerText": "Virus"
+    },
+    {
+      "Question": "What type of security control informs employees and others about necessary actions to achieve security objectives, with examples like policies and procedures?",
+      "A": "Preventive control",
+      "B": "Corrective control",
+      "C": "Detective control",
+      "D": "Directive control",
+      "Answer": "D",
+      "AnswerText": "Directive control"
+    },
+    {
+      "Question": "When a vulnerability scanner fails to detect a vulnerability that actually exists on a system, what type of error is this known as?",
+      "A": "True positive",
+      "B": "True negative",
+      "C": "False positive",
+      "D": "False negative",
+      "Answer": "D",
+      "AnswerText": "False negative"
+    },
+    {
+      "Question": "Which of the following is considered a \"something you know\" factor in multifactor authentication (MFA)?",
+      "A": "A smart card",
+      "B": "A fingerprint",
+      "C": "A password",
+      "D": "A USB security key",
+      "Answer": "C",
+      "AnswerText": "A password"
+    },
+    {
+      "Question": "Which physical security element is designed to prevent or delay unauthorized access to a secure facility by creating a controlled entry point where only one person can enter at a time?",
+      "A": "Fencing",
+      "B": "Bollards",
+      "C": "Access control vestibule",
+      "D": "Video surveillance",
+      "Answer": "C",
+      "AnswerText": "Access control vestibule"
+    },
+    {
+      "Question": "What term best describes data that is currently being sent between two systems over a network connection?",
+      "A": "Data at rest",
+      "B": "Data in transit",
+      "C": "Data in processing",
+      "D": "Data in use",
+      "Answer": "B",
+      "AnswerText": "Data in transit"
+    },
+    {
+      "Question": "When performing a forensic investigation, what term refers to the process of identifying, preserving, collecting, and presenting electronic information for legal or investigatory purposes?",
+      "A": "Chain of custody",
+      "B": "Legal hold",
+      "C": "Digital forensics",
+      "D": "Acquisition",
+      "Answer": "C",
+      "AnswerText": "Digital forensics"
+    },
+    {
+      "Question": "What does MTBF stand for in the context of risk management, and what does it measure?",
+      "A": "Mean Time to Failure; the average time until a product fails permanently.",
+      "B": "Mean Time Between Failures; the expected amount of time that will elapse between system failures.",
+      "C": "Mean Time to Repair; the average amount of time to restore a system to its normal operating state after a failure.",
+      "D": "Monetary Total Business Factor; a financial impact metric.",
+      "Answer": "B",
+      "AnswerText": "Mean Time Between Failures; the expected amount of time that will elapse between system failures."
+    },
+    {
+      "Question": "Which type of malware disguises itself as harmless or legitimate software, taking malicious action once it is downloaded and run?",
+      "A": "Worm",
+      "B": "Rootkit",
+      "C": "Trojan",
+      "D": "Ransomware",
+      "Answer": "C",
+      "AnswerText": "Trojan"
+    },
+    {
+      "Question": "If the Single Loss Expectancy (SLE) for an asset is $50,000, and the Annualized Rate of Occurrence (ARO) is 0.2, what is the Annualized Loss Expectancy (ALE)? (Hint: ALE = SLE × ARO)",
+      "A": "$10,000",
+      "B": "$50,000",
+      "C": "$250,000",
+      "D": "$5,000",
+      "Answer": "A",
+      "AnswerText": "$10,000"
+    },
+    {
+      "Question": "In a symmetric encryption system, what key is used by both the sender and the receiver for encryption and decryption of a message?",
+      "A": "The recipient's public key",
+      "B": "A shared secret key",
+      "C": "The sender's private key",
+      "D": "A key pair set",
+      "Answer": "B",
+      "AnswerText": "A shared secret key"
+    },
+    {
+      "Question": "Which type of security control is defined by a written policy or procedure that informs employees and others what they should do to achieve security objectives?",
+      "A": "Compensating control",
+      "B": "Preventive control",
+      "C": "Corrective control",
+      "D": "Directive control",
+      "Answer": "D",
+      "AnswerText": "Directive control"
+    },
+    {
+      "Question": "A vulnerability scanner reports a flaw on a server, but a security analyst confirms that the necessary patch was already installed and the flaw does not exist. What type of scanning error occurred?",
+      "A": "True negative",
+      "B": "False negative",
+      "C": "True positive",
+      "D": "False positive",
+      "Answer": "D",
+      "AnswerText": "False positive"
+    },
+    {
+      "Question": "When an incident responder identifies an infected system and removes it from the network to ensure it cannot impact other systems, what immediate containment technique is being used?",
+      "A": "Segmentation",
+      "B": "Deny listing",
+      "C": "Quarantine",
+      "D": "Isolation",
+      "Answer": "D",
+      "AnswerText": "Isolation"
+    },
+    {
+      "Question": "What Linux kernel-based security module provides Mandatory Access Control (MAC) capabilities and supports least privilege security implementations on Linux distributions?",
+      "A": "Group Policy",
+      "B": "SELinux",
+      "C": "VLAN",
+      "D": "BASH",
+      "Answer": "B",
+      "AnswerText": "SELinux"
+    },
+    {
+      "Question": "Which Business Impact Analysis (BIA) metric represents the average amount of time required to fix a failed component or device and return it to production status?",
+      "A": "Mean Time Between Failures (MTBF)",
+      "B": "Recovery Point Objective (RPO)",
+      "C": "Mean Time to Repair (MTTR)",
+      "D": "Mean Time to Failure (MTTF)",
+      "Answer": "C",
+      "AnswerText": "Mean Time to Repair (MTTR)"
+    },
+    {
+      "Question": "Which solution is recommended to place management ports for network devices like switches and routers onto an isolated Virtual LAN (VLAN) to protect them from potential attackers?",
+      "A": "Network Access Control (NAC)",
+      "B": "Network segmentation",
+      "C": "Trunking",
+      "D": "Port security",
+      "Answer": "B",
+      "AnswerText": "Network segmentation"
+    },
+    {
+      "Question": "Precompiled SQL statements that only require variables to be input are an example of which application security control used to mitigate SQL injection vulnerabilities?",
+      "A": "Dynamic code analysis",
+      "B": "Encoding data",
+      "C": "User input validation",
+      "D": "Parameterized queries",
+      "Answer": "D",
+      "AnswerText": "Parameterized queries"
+    },
+    {
+      "Question": "If a single loss expectancy (SLE) is calculated to be $50,000 and the annual rate of occurrence (ARO) is 0.2, what is the annualized loss expectancy (ALE)?",
+      "A": "$5,000",
+      "B": "$10,000",
+      "C": "$50,000",
+      "D": "$250,000",
+      "Answer": "B",
+      "AnswerText": "$10,000"
+    },
+    {
+      "Question": "What cryptographic goal is achieved by using encryption to protect sensitive information from unauthorized access?",
+      "A": "Integrity",
+      "B": "Availability",
+      "C": "Non-repudiation",
+      "D": "Confidentiality",
+      "Answer": "D",
+      "AnswerText": "Confidentiality"
+    },
+    {
+      "Question": "Which type of malware is intentionally disguised to look like a legitimate piece of software, but executes malicious actions once downloaded and run?",
+      "A": "Worm",
+      "B": "Rootkit",
+      "C": "Crypto-malware",
+      "D": "Trojan",
+      "Answer": "D",
+      "AnswerText": "Trojan"
+    },
+    {
+      "Question": "When implementing security practices, a cybersecurity team utilizes a process where permissions are granted to users only when they are needed for a specific task and are then automatically removed when the task is completed or a set time expires. What does this process enforce?",
+      "A": "Privilege escalation",
+      "B": "Role-based access control (RBAC)",
+      "C": "Just-in-Time (JIT) permissions",
+      "D": "Discretionary access control (DAC)",
+      "Answer": "C",
+      "AnswerText": "Just-in-Time (JIT) permissions"
+    },
+    {
+      "Question": "When a network security analyst reviews a vulnerability scan report and finds an entry reporting a vulnerability that does not actually exist on the system, what type of error has occurred?",
+      "A": "True negative",
+      "B": "True positive",
+      "C": "False positive",
+      "D": "False negative",
+      "Answer": "C",
+      "AnswerText": "False positive"
+    },
+    {
+      "Question": "Which type of access control scheme is best exemplified by the Linux filesystem, where the owner of a file determines the permissions for that file?",
+      "A": "Role-Based Access Control (RBAC)",
+      "B": "Mandatory Access Control (MAC)",
+      "C": "Discretionary Access Control (DAC)",
+      "D": "Attribute-Based Access Control (ABAC)",
+      "Answer": "C",
+      "AnswerText": "Discretionary Access Control (DAC)"
+    },
+    {
+      "Question": "Which protocol is commonly used to encapsulate other protocols, such as HTTP, to secure communication and ensure confidential data is protected during transport?",
+      "A": "EAP",
+      "B": "RADIUS",
+      "C": "SNMP",
+      "D": "TLS",
+      "Answer": "D",
+      "AnswerText": "TLS"
+    },
+    {
+      "Question": "What physical security control prevents unauthorized vehicles from breaching the perimeter of a secure facility, such as a datacenter?",
+      "A": "Access control vestibules",
+      "B": "Bollards",
+      "C": "Fencing",
+      "D": "Video surveillance",
+      "Answer": "B",
+      "AnswerText": "Bollards"
+    },
+    {
+      "Question": "In an asymmetric cryptography system, if a recipient receives an encrypted message, which key must they use to successfully decrypt the message?",
+      "A": "The sender's public key",
+      "B": "The recipient's public key",
+      "C": "The shared secret key",
+      "D": "The recipient's private key",
+      "Answer": "D",
+      "AnswerText": "The recipient's private key"
+    },
+    {
+      "Question": "In the incident response cycle used in the Security+ exam objectives, which phase immediately follows Recovery and is intended to guide future preparation work?",
+      "A": "Detection",
+      "B": "Analysis",
+      "C": "Eradication",
+      "D": "Lessons Learned",
+      "Answer": "D",
+      "AnswerText": "Lessons Learned"
+    }
+  ]
+}

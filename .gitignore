@@ -1,4 +1,5 @@
-# Custom ignore rules for Python projects
+# Custom ignores for Security Plus Quizzer project
+sample.json
 scores.json
 
 # Byte-compiled / optimized / DLL files
