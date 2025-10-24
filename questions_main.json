@@ -1745,6 +1745,51 @@
       "D": "Lessons Learned",
       "Answer": "D",
       "AnswerText": "Lessons Learned"
+    },
+    {  
+      "Question": "An attacker calls an employee pretending to be from the company’s IT department, claiming there’s an urgent issue with the user’s email account. The attacker asks the user to verify their username and password. Which type of social engineering attack is this?",
+      "A": "Phishing",
+      "B": "Pretexting",
+      "C": "Baiting",
+      "D": "Shoulder surfing",
+      "Answer": "B",
+      "AnswerText": "Pretexting"
+    },
+    {
+      "Question": "Which of the following best describes pretexting?",
+      "A": "Sending emails that appear to come from a trusted source to trick users into clicking a malicious link",
+      "B": "Leaving infected USB drives in public areas to entice users to pick them up",
+      "C": "Using a fabricated story or false identity to gain information or access",
+      "D": "Following an employee through a secured door without authorization",
+      "Answer": "C",
+      "AnswerText": "Using a fabricated story or false identity to gain information or access"
+    },
+    {
+      "Question": "An individual poses as a bank employee conducting a 'customer verification check' and calls customers to request their account numbers. What attack type does this describe?",
+      "A": "Vishing",
+      "B": "Pretexting",
+      "C": "Pharming",
+      "D": "Tailgating",
+      "Answer": "A",
+      "AnswerText": "Vishing"
+    },
+    {
+      "Question": "A help desk employee receives a call from someone claiming to be a manager who forgot their password and needs an immediate reset. The caller pressures the employee to bypass normal security checks. What type of social engineering technique is this?",
+      "A": "Pretexting",
+      "B": "Impersonation",
+      "C": "Phishing",
+      "D": "Dumpster diving",
+      "Answer": "A",
+      "AnswerText": "Pretexting"
+    },
+    {
+      "Question": "Which of the following actions would best protect against pretexting attacks?",
+      "A": "Installing a spam filter",
+      "B": "Disabling USB ports on workstations",
+      "C": "Training employees to verify the identity of requestors before sharing information",
+      "D": "Implementing a strong password policy",
+      "Answer": "C",
+      "AnswerText": "Training employees to verify the identity of requestors before sharing information"
     }
   ]
 }
