@@ -5,7 +5,7 @@ A command-line quiz application I built for practicing CompTIA Security+ exam
 questions. This could be used for other multiple-choice quizzes as well. See the
 README for details, specifically the expected format of the questions JSON file.
 
-The application loads questions from a JSON file, presents them in random order,
+The application loads questions from a JSON file, presents them one at a time,
 and tracks user scores over time.
 
 Usage:
@@ -20,6 +20,11 @@ import json
 import os
 import random
 from datetime import datetime
+
+
+def clear_screen() -> None:
+    """Clear the terminal screen."""
+    os.system('clear' if os.name == 'posix' else 'cls')
 
 
 def load_data(filename: str) -> list[dict]:
@@ -93,9 +98,12 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int]:
     selected = random.sample(questions, num_questions)
     score = 0
     option_letters = ["A", "B", "C", "D"]
+    question_num = 1
 
     for q in selected:
-        print(f"\n{q['question']}")
+        clear_screen()
+        print(f"Question {question_num} of {num_questions}\n")
+        print(f"{q['question']}")
         correct_index = option_letters.index(q["answer"])
         correct_text = q["options"][correct_index]
 
@@ -120,10 +128,17 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int]:
             score += 1
         else:
             print(f"Incorrect. Correct answer: {option_letters[new_correct_index]}")
-        print(f"Explanation: {q['answer_text']}")
+        print(f"Explanation: {q['answer_text']}\n")
+        
+        if question_num < num_questions:
+            input("Press Enter for next question...")
+        else:
+            input("Press Enter to see your final score...")
+        question_num += 1
 
+    clear_screen()
     percentage = (score / num_questions) * 100 if num_questions > 0 else 0
-    print(f"\nScore: {score}/{num_questions} ({percentage:.1f}%)")
+    print(f"\nFinal Score: {score}/{num_questions} ({percentage:.1f}%)")
     return score, num_questions
 
 
