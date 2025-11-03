@@ -842,7 +842,7 @@
     "C": "To forcibly disconnect clients to observe authentication information.",
     "D": "To test the strength of the WPA3 SAE key exchange.",
     "Answer": "C",
-    "AnswerText": "To forcibly disconnect clients to observe authentication information",
+    "AnswerText": "To forcibly disconnect clients to observe authentication information.",
     "Domain": "Threats, vulnerabilities, and mitigations",
     "ExplanationText": "Deauthentication attacks are correct because they force clients to reconnect, allowing attackers to capture authentication data. Simply preventing connectivity is not the goal, testing RADIUS or WPA3 strength may be related but is not the attack’s primary purpose."
   },
