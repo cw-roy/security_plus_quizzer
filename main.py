@@ -15,13 +15,35 @@ import argparse
 import json
 import os
 import random
+import shutil
+import textwrap
 from collections import defaultdict
 from datetime import datetime
 
+# Constants
+
+WIDTH = 80
 
 def clear_screen() -> None:
     """Clear the terminal screen."""
     os.system("clear" if os.name == "posix" else "cls")
+
+
+def wrap_text(text: str, initial_indent: str = "", subsequent_indent: str = "") -> str:
+    """Wrap text to WIDTH characters, preserving words and handling indentation."""
+    try:
+        terminal_width = shutil.get_terminal_size(fallback=(WIDTH, 24)).columns
+        wrap_width = min(WIDTH, terminal_width)
+    except Exception:
+        wrap_width = WIDTH
+    
+    return textwrap.fill(
+        text,
+        width=wrap_width,
+        initial_indent=initial_indent,
+        subsequent_indent=subsequent_indent,
+        break_on_hyphens=False
+    )
 
 
 def load_data(filename: str) -> list[dict]:
@@ -89,8 +111,8 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int, dict]
         domain_stats[domain]["total"] += 1
 
         clear_screen()
-        print(f"Question {i} of {num_questions}\n")
-        print(f"{q['question']}\n")
+        print(wrap_text(f"Question {i} of {num_questions}") + "\n")
+        print(wrap_text(q['question']) + "\n")
 
         correct_text = q["answer_text"]
         shuffled_options = q["options"][:]
@@ -103,14 +125,16 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int, dict]
         )
 
         for letter in option_letters:
-            print(f"{letter}. {letter_to_opt[letter]}")
+            print(wrap_text(letter_to_opt[letter], 
+                          initial_indent=f"{letter}. ",
+                          subsequent_indent="   "))
 
         print()
         while True:
             user_ans = input("Your answer (A/B/C/D): ").upper().strip()
             if user_ans in option_letters:
                 break
-            print("Invalid input. Please enter A, B, C, or D.")
+            print(wrap_text("Invalid input. Please enter A, B, C, or D."))
 
         correct = user_ans == correct_shuffled_letter
         if correct:
@@ -119,21 +143,21 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int, dict]
 
         print()
         if correct:
-            print("Correct!")
+            print(wrap_text("Correct!"))
         else:
-            print("Incorrect!")
+            print(wrap_text("Incorrect!"))
 
-        print(f"The correct answer is {correct_shuffled_letter}. {correct_text}")
+        print(wrap_text(f"The correct answer is {correct_shuffled_letter}. {correct_text}"))
 
         if not correct:
             print("\nDetailed Explanation:")
-            print(q["explanation_text"])
+            print(wrap_text(q["explanation_text"]))
 
         print()
         if i < num_questions:
-            input("Press Enter for the next question...")
+            input(wrap_text("Press Enter for the next question..."))
         else:
-            input("Press Enter to view your score...")
+            input(wrap_text("Press Enter to view your score..."))
 
     return score, num_questions, dict(domain_stats)
 
@@ -201,12 +225,12 @@ def main() -> None:
     score, total, domain_stats = run_quiz(questions, args.num)
 
     clear_screen()
-    print("Quiz Complete!\n")
+    print(wrap_text("Quiz Complete!") + "\n")
     percentage = (score / total * 100) if total > 0 else 0
-    print(f"Overall Score: {score}/{total} ({percentage:.1f}%)\n")
+    print(wrap_text(f"Overall Score: {score}/{total} ({percentage:.1f}%)") + "\n")
 
     if domain_stats:
-        print("Domain Breakdown:")
+        print(wrap_text("Domain Breakdown:"))
         sorted_domains = sorted(domain_stats.keys())
         percs = {}
         for d in sorted_domains:
@@ -214,17 +238,17 @@ def main() -> None:
             t = domain_stats[d]["total"]
             p = (c / t * 100) if t > 0 else 0
             percs[d] = p
-            print(f"  • {d}: {c}/{t} ({p:.1f}%)")
+            print(wrap_text(f"  • {d}: {c}/{t} ({p:.1f}%)", subsequent_indent="    "))
 
         if percs:
             min_p = min(percs.values())
             poor_domains = [d for d, p in percs.items() if p == min_p]
             if len(set(percs.values())) == 1:
-                print("\nBalanced performance across domains.")
+                print("\n" + wrap_text("Balanced performance across domains."))
             else:
                 poor_str = ", ".join(poor_domains)
-                print(f"\nLowest score: {poor_str} ({min_p:.1f}%)")
-                print("Advice: Focus more study on the domain(s) above.")
+                print("\n" + wrap_text(f"Lowest score: {poor_str} ({min_p:.1f}%)"))
+                print(wrap_text("Advice: Focus more study on the domain(s) above."))
 
         if score == total:
             print("\nPerfect overall score! Excellent work.")
