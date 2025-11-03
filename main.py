@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Quiz Application
-A command-line quiz application I built for practicing CompTIA Security+ exam 
+A command-line quiz application I built for practicing CompTIA Security+ exam
 questions. This could be used for other multiple-choice quizzes as well. See the
 README for details, specifically the expected format of the questions JSON file.
 
@@ -24,7 +24,7 @@ from datetime import datetime
 
 def clear_screen() -> None:
     """Clear the terminal screen."""
-    os.system('clear' if os.name == 'posix' else 'cls')
+    os.system("clear" if os.name == "posix" else "cls")
 
 
 def load_data(filename: str) -> list[dict]:
@@ -50,13 +50,11 @@ def load_data(filename: str) -> list[dict]:
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    if not isinstance(data, dict) or "questions" not in data:
-        raise ValueError("JSON file must contain a 'questions' key with a list.")
-    if not isinstance(data["questions"], list):
-        raise ValueError("'questions' must be a list.")
+    if not isinstance(data, list):
+        raise ValueError("JSON file must be a list of question objects.")
 
     questions = []
-    for q in data["questions"]:
+    for q in data:
         required_keys = ["Question", "A", "B", "C", "D", "Answer", "AnswerText"]
         if not all(k in q for k in required_keys):
             raise ValueError(
@@ -129,7 +127,7 @@ def run_quiz(questions: list[dict], num_questions: int) -> tuple[int, int]:
         else:
             print(f"Incorrect. Correct answer: {option_letters[new_correct_index]}")
         print(f"Explanation: {q['answer_text']}\n")
-        
+
         if question_num < num_questions:
             input("Press Enter for next question...")
         else:
