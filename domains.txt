@@ -1,0 +1,9 @@
+Question bank contents
+
+Security architecture: 64
+Threats, vulnerabilities, and mitigations: 47
+Security program management and oversight: 45
+General security concepts: 28
+Security operations: 28
+
+Need more questions for Security operations and General security concepts
