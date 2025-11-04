@@ -22,7 +22,7 @@ from datetime import datetime
 
 # Constants
 
-WIDTH = 80
+WIDTH = 80 # Default terminal width for wrapping text
 
 def clear_screen() -> None:
     """Clear the terminal screen."""

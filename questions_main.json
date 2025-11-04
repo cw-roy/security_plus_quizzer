@@ -2187,5 +2187,159 @@
     "AnswerText": "Training employees to verify the identity of requestors before sharing information",
     "Domain": "Security program management and oversight",
     "ExplanationText": "Training employees is correct because awareness and verification reduce pretexting risks. Spam filters prevent phishing emails, not pretexting calls. Disabling USB ports protects against physical attacks. A strong password policy alone does not stop social engineering."
+  },
+  {
+    "Question": "Which security concept ensures that data is accessible only to authorized users?",
+    "A": "Integrity",
+    "B": "Availability",
+    "C": "Confidentiality",
+    "D": "Authentication",
+    "Answer": "C",
+    "AnswerText": "Confidentiality",
+    "Domain": "General security concepts",
+    "ExplanationText": "Confidentiality restricts data access to authorized parties only. Integrity ensures data accuracy and prevents unauthorized changes. Availability guarantees timely access to data. Authentication verifies user identity but does not control data access."
+  },
+  {
+    "Question": "What is the primary goal of the AAA security framework?",
+    "A": "Encryption, authorization, auditing",
+    "B": "Authentication, authorization, accounting",
+    "C": "Access, availability, accountability",
+    "D": "Auditing, authentication, availability",
+    "Answer": "B",
+    "AnswerText": "Authentication, authorization, accounting",
+    "Domain": "General security concepts",
+    "ExplanationText": "AAA stands for authentication to verify identity, authorization to define permissions, and accounting to log actions. The other options misrepresent the standard components of the AAA framework."
+  },
+  {
+    "Question": "Which principle requires users to have only the access needed to perform their job?",
+    "A": "Separation of duties",
+    "B": "Least privilege",
+    "C": "Defense in depth",
+    "D": "Zero trust",
+    "Answer": "B",
+    "AnswerText": "Least privilege",
+    "Domain": "General security concepts",
+    "ExplanationText": "Least privilege grants minimal access rights required for tasks. Separation of duties divides critical functions among users. Defense in depth uses multiple security layers. Zero trust assumes no implicit trust and verifies continuously."
+  },
+  {
+    "Question": "What does non-repudiation prevent in security transactions?",
+    "A": "Data modification",
+    "B": "Denial of actions",
+    "C": "Unauthorized access",
+    "D": "Service interruption",
+    "Answer": "B",
+    "AnswerText": "Denial of actions",
+    "Domain": "General security concepts",
+    "ExplanationText": "Non-repudiation ensures users cannot deny performing actions through mechanisms like digital signatures. Data modification is prevented by integrity controls. Unauthorized access is addressed by confidentiality. Service interruption relates to availability."
+  },
+  {
+    "Question": "Which control type requires a physical badge to enter a facility?",
+    "A": "Technical",
+    "B": "Administrative",
+    "C": "Physical",
+    "D": "Operational",
+    "Answer": "C",
+    "AnswerText": "Physical",
+    "Domain": "General security concepts",
+    "ExplanationText": "Physical controls involve tangible barriers like badges and locks. Technical controls use software and hardware. Administrative controls are policies. Operational controls relate to day-to-day procedures."
+  },
+  {
+    "Question": "What is the main purpose of separation of duties?",
+    "A": "Reduce single point of failure",
+    "B": "Prevent fraud by collusion",
+    "C": "Improve system performance",
+    "D": "Ensure data encryption",
+    "Answer": "B",
+    "AnswerText": "Prevent fraud by collusion",
+    "Domain": "General security concepts",
+    "ExplanationText": "Separation of duties requires multiple users for critical tasks to deter fraud. Reducing single points of failure relates to availability. Performance and encryption are unrelated to this principle."
+  },
+  {
+    "Question": "Which concept assumes no trust and verifies every access request?",
+    "A": "Defense in depth",
+    "B": "Least privilege",
+    "C": "Zero trust",
+    "D": "Need to know",
+    "Answer": "C",
+    "AnswerText": "Zero trust",
+    "Domain": "General security concepts",
+    "ExplanationText": "Zero trust verifies every request regardless of origin. Defense in depth layers controls. Least privilege limits access. Need to know restricts data to job requirements."
+  },
+  {
+    "Question": "What does the CIA triad primarily protect?",
+    "A": "Costs, integration, availability",
+    "B": "Confidentiality, integrity, availability",
+    "C": "Controls, identification, authentication",
+    "D": "Compliance, incidents, assessments",
+    "Answer": "B",
+    "AnswerText": "Confidentiality, integrity, availability",
+    "Domain": "General security concepts",
+    "ExplanationText": "The CIA triad ensures data is confidential, accurate, and accessible. The other options use incorrect or unrelated acronyms for the core security model."
+  },
+  {
+    "Question": "Which control is a policy requiring password changes every 90 days?",
+    "A": "Physical",
+    "B": "Technical",
+    "C": "Administrative",
+    "D": "Detective",
+    "Answer": "C",
+    "AnswerText": "Administrative",
+    "Domain": "General security concepts",
+    "ExplanationText": "Administrative controls are policies and procedures like password rotation. Physical controls are barriers. Technical controls are software-based. Detective controls identify incidents after occurrence."
+  },
+  {
+    "Question": "What principle limits data access to those who need it for their role?",
+    "A": "Least privilege",
+    "B": "Zero trust",
+    "C": "Need to know",
+    "D": "Defense in depth",
+    "Answer": "C",
+    "AnswerText": "Need to know",
+    "Domain": "General security concepts",
+    "ExplanationText": "Need to know restricts information to job-essential personnel. Least privilege limits system access. Zero trust verifies all requests. Defense in depth uses layered security."
+  },
+  {
+    "Question": "Which control type uses firewalls and encryption?",
+    "A": "Administrative",
+    "B": "Physical",
+    "C": "Technical",
+    "D": "Managerial",
+    "Answer": "C",
+    "AnswerText": "Technical",
+    "Domain": "General security concepts",
+    "ExplanationText": "Technical controls implement security via technology like firewalls and encryption. Administrative are policies. Physical are barriers. Managerial is not a standard control category."
+  },
+  {
+    "Question": "What does defense in depth rely on to protect assets?",
+    "A": "Single strong control",
+    "B": "Multiple layered controls",
+    "C": "User training only",
+    "D": "External audits",
+    "Answer": "B",
+    "AnswerText": "Multiple layered controls",
+    "Domain": "General security concepts",
+    "ExplanationText": "Defense in depth uses overlapping controls to mitigate risks if one fails. A single control is insufficient. Training and audits support but are not the core strategy."
+  },
+  {
+    "Question": "Which framework element verifies a user's identity?",
+    "A": "Authorization",
+    "B": "Accounting",
+    "C": "Authentication",
+    "D": "Auditing",
+    "Answer": "C",
+    "AnswerText": "Authentication",
+    "Domain": "General security concepts",
+    "ExplanationText": "Authentication confirms identity using credentials or biometrics. Authorization grants permissions. Accounting tracks actions. Auditing reviews logs."
+  },
+  {
+    "Question": "What is the purpose of a security control baseline?",
+    "A": "Define minimum security requirements",
+    "B": "Eliminate all vulnerabilities",
+    "C": "Replace risk assessments",
+    "D": "Automate compliance reporting",
+    "Answer": "A",
+    "AnswerText": "Define minimum security requirements",
+    "Domain": "General security concepts",
+    "ExplanationText": "A baseline establishes standard minimum controls for systems. It cannot eliminate all vulnerabilities. Risk assessments identify threats. Compliance reporting is a separate function."
   }
 ]

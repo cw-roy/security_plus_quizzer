@@ -48,20 +48,20 @@ python3 main.py --file questions_master.json --num 20 --scores history.json
 ### Input JSON Format
 The script expects a JSON file with the following structure:
 ```json
-{
-  "questions": [
-    {
-      "Question": "Question text",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "Answer": "A",
-      "AnswerText": "Option A"
-    },
-    ...
-  ]
-}
+[
+  {
+    "Question": "Question?",
+    "A": "Answer A",
+    "B": "Answer B",
+    "C": "Answer C",
+    "D": "Answer D",
+    "Answer": "A",
+    "AnswerText": "Answer A",
+    "Domain": "Comptia Security+ domain",
+    "ExplanationText": "Conversational description of why Answer A is correct, and why the other options are incorrect."
+  },
+  ...
+]
 ```
 
 ### Output

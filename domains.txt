@@ -1,9 +1,21 @@
-Question bank contents
+Question bank 
 
-Security architecture: 64
-Threats, vulnerabilities, and mitigations: 47
-Security program management and oversight: 45
-General security concepts: 28
-Security operations: 28
+Domain, (exam weight percentage): number of questions
 
-Need more questions for Security operations and General security concepts
+General security concepts (12%)
+Threats, vulnerabilities, and mitigations (22%)
+Security architecture (18%)
+Security operations (28%)
+Security program management and oversight (20%)
+
+Need more questions.
+
+Domain (weight)                                 Current   New Target   Add
+---------------------------------------------------------------------------
+General security concepts (12%)                     28          42        14    Added
+Threats, vulnerabilities & mitigations (22%)        47          78        31
+Security architecture (18%)                         64          64         0
+Security operations (28%)                           28          99        71
+Security program management & oversight (20%)       45          71        26
+---------------------------------------------------------------------------
+
