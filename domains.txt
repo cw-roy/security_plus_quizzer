@@ -1,11 +1,11 @@
-Question bank 
+Add new questions to question bank 
 
 Domain (weight)                                 Current   New Target   Add
 ---------------------------------------------------------------------------
-General security concepts (12%)                     31          42        11
-Threats, vulnerabilities and mitigations (22%)      76          78         2
-Security architecture (18%)                         64          64         0
-Security operations (28%)                           47          99        52
-Security program management and oversight (20%)     45          71        26
+General security concepts (12%)                     31          42        Done
+Threats, vulnerabilities and mitigations (22%)      76          78        Close enough 
+Security architecture (18%)                         64          64        Done
+Security operations (28%)                           67          99        
+Security program management and oversight (20%)     45          71        
 ---------------------------------------------------------------------------
 
