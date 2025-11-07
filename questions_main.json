@@ -3111,5 +3111,115 @@
     "AnswerText": "Brute-force attempts",
     "Domain": "Security operations",
     "ExplanationText": "Account lockout stops automated password guessing after failures. Phishing tricks users. SQL injection exploits inputs. DDoS overwhelms services."
-  }
+  },{
+  "Question": "An attacker uses PowerShell to load malicious code directly into memory without writing any files to disk. What type of malware technique is being used?",
+  "A": "Polymorphic virus",
+  "B": "Fileless malware",
+  "C": "Boot sector virus",
+  "D": "Ransomware",
+  "Answer": "B",
+  "AnswerText": "Fileless malware",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Fileless malware runs in memory and uses legitimate tools without leaving files on disk. A polymorphic virus changes its code to evade detection but still relies on files. A boot sector virus infects the system's boot loader. Ransomware encrypts data and demands payment but typically involves executable files."
+},
+{
+  "Question": "A security analyst notices repeated WMI-based commands launching scripts from memory on multiple endpoints. This behavior is most indicative of which threat?",
+  "A": "Rootkit infection",
+  "B": "Fileless malware persistence",
+  "C": "SQL injection attempt",
+  "D": "Brute-force authentication attack",
+  "Answer": "B",
+  "AnswerText": "Fileless malware persistence",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Fileless malware often abuses WMI to maintain persistence without storing files. A rootkit hides processes or system modifications but typically requires installation. SQL injection targets databases, not WMI. Brute-force attacks try multiple login attempts and do not involve WMI commands."
+},
+{
+  "Question": "Which security control is MOST effective for detecting fileless malware that executes through living-off-the-land binaries?",
+  "A": "Signature-based antivirus",
+  "B": "Full-disk encryption",
+  "C": "Behavior-based endpoint detection",
+  "D": "RAID storage redundancy",
+  "Answer": "C",
+  "AnswerText": "Behavior-based endpoint detection",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Behavior-based tools detect abnormal activity often associated with fileless attacks. Signature-based antivirus typically misses in-memory attacks. Full-disk encryption protects stored data, not runtime behavior. RAID improves storage availability but does not address malware detection."
+},
+{
+  "Question": "A phishing email convinces a user to enable macros in a document, which then launches hidden PowerShell commands that run malicious code entirely in memory. What type of threat does this describe?",
+  "A": "File-based worm",
+  "B": "Fileless attack",
+  "C": "Logic bomb",
+  "D": "Adware infection",
+  "Answer": "B",
+  "AnswerText": "Fileless attack",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Fileless attacks run payloads in memory, often via PowerShell scripts delivered by malicious macros. A worm replicates itself through files or networks. A logic bomb triggers when conditions are met but usually involves stored code. Adware displays unwanted ads and doesn't require memory-only execution."
+},
+{
+  "Question": "An attacker uses reflective DLL injection to load malicious code into a running process without placing a DLL file on the disk. What attack method is this an example of?",
+  "A": "Fileless execution",
+  "B": "Cross-site scripting",
+  "C": "Buffer overflow exploit",
+  "D": "Supply chain compromise",
+  "Answer": "A",
+  "AnswerText": "Fileless execution",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Reflective DLL injection loads code into memory without using disk files, fitting fileless execution. Cross-site scripting manipulates web pages. Buffer overflows corrupt memory but do not inherently avoid disk use. Supply chain compromises target upstream vendors, not in-memory execution."
+},
+{
+  "Question": "Which scenario best demonstrates a fileless malware infection?",
+  "A": "A user downloads a malicious executable disguised as a PDF",
+  "B": "A script stored only in the registry launches via a trusted system binary",
+  "C": "A trojan that installs a backdoor using a downloaded installer",
+  "D": "A worm that writes itself to every removable drive",
+  "Answer": "B",
+  "AnswerText": "A script stored only in the registry launches via a trusted system binary",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Storing script payloads in the registry and launching them via legitimate binaries is a known fileless technique. Downloading disguised executables still involves files. Trojans rely on installers. Worms typically propagate by writing copies to drives."
+},
+{
+  "Question": "A red team demonstrates an attack where malicious code is executed entirely through the Windows Management Instrumentation (WMI) subsystem. What characteristic makes this attack harder to detect?",
+  "A": "It uses encrypted email attachments",
+  "B": "It avoids creating or modifying files on the disk",
+  "C": "It relies on known vulnerabilities with public CVEs",
+  "D": "It always requires administrator credentials",
+  "Answer": "B",
+  "AnswerText": "It avoids creating or modifying files on the disk",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Fileless attacks are difficult to detect because they avoid the file system. Encrypted attachments do not imply fileless behavior. Public CVEs are unrelated. Administrator credentials may help but are not required for all fileless attacks."
+},
+{
+  "Question": "Which mitigation best reduces the risk of fileless malware that abuses PowerShell?",
+  "A": "Disabling USB ports",
+  "B": "Implementing PowerShell constrained language mode",
+  "C": "Increasing password length requirements",
+  "D": "Expanding RAID storage capacity",
+  "Answer": "B",
+  "AnswerText": "Implementing PowerShell constrained language mode",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Constrained language mode limits PowerShell capabilities commonly used by attackers. Disabling USB ports doesn't affect in-memory attacks. Lengthening passwords improves authentication security but not script execution. RAID capacity has no relevance to malware mitigation."
+},
+{
+  "Question": "A SOC analyst detects that 'rundll32.exe' is making unusual outbound network connections and loading encoded scripts. What type of attack technique is this most likely?",
+  "A": "Fileless malware using a LOLBin",
+  "B": "Drive-by download",
+  "C": "Man-in-the-middle attack",
+  "D": "Password spraying",
+  "Answer": "A",
+  "AnswerText": "Fileless malware using a LOLBin",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Fileless malware often abuses trusted system binaries like rundll32 as LOLBins. Drive-by downloads involve compromised websites. Man-in-the-middle attacks intercept traffic. Password spraying tests common passwords across many accounts."
+},
+{
+  "Question": "Why do signature-based antivirus engines often fail to detect fileless malware?",
+  "A": "Fileless malware disables the CPU cache",
+  "B": "Fileless malware never interacts with the operating system",
+  "C": "Fileless malware runs in memory and leaves no file signatures to scan",
+  "D": "Fileless malware works only on unsupported operating systems",
+  "Answer": "C",
+  "AnswerText": "Fileless malware runs in memory and leaves no file signatures to scan",
+  "Domain": "Threats, vulnerabilities, and mitigations",
+  "ExplanationText": "Fileless malware stays in memory, avoiding files that signature AV can examine. It does not disable CPU cache, and it interacts heavily with the OS. It is not restricted to unsupported systems."
+}
+
 ]
